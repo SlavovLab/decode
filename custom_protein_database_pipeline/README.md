@@ -22,7 +22,7 @@ If using CPTAC data, download RNA-seq data from GDC (NIH Genomic Data Commons) u
 11. Fasta_merge_files_and_filter_unique_sequences.py (script adapted from Galaxy, provided here)
 
 # Usage
-Run PGDB_main.sh in terminal or Linux after installing dependencies. 
+## 1. Run PGDB_main.sh in terminal or Linux after installing dependencies. 
 
 This script was written to be run in a Slurm environment on a single file downloaded from GDC. The preamble may need editing. Update directory to location of dataset RNA-seq data files. 
 
@@ -40,5 +40,12 @@ To execute for all files in a dataset:
 2. Loop over arrays to submit all jobs for dataset simultaneously. E.g.
 > for i in {0..185}; do  sbatch --job-name=${sampleArray[$i]} --output=PGDB_${sampleArray[$i]}.out PGDB_main.sh ${idArray[$i]} ${fileArray[$i]} ${sampleArray[$i]}; done
 
+## 2. Merge protein databases corresponding to samples in a single TMT experiment (CPTAC data) or a given tissue (label-free data)
 
+This only needs to be done for large, multiplexed datasets. 
 
+1. Move all databases for samples in the same TMT set or tissue to a new directory. The easiest way to do this is to generate a list of TMT set/tissue ids corresponding to each sample in the same order as sample_list.txt
+2. Create arrays on command line from id_list.txt, file_list.txt, sample_list.txt and tmt_list.txt, as decribed above.
+3. Loop over arrays to move final protein databases into correct TMT set directory e.g. 
+> for i in {0..185}; do  mv RNAseq_data/${idArray[$i]}/${sampleArray[$i]}.CDS.final.fasta ${tmtArray[$i]}/${sampleArray[$i]}.CDS.final.fasta; done
+4. Combine databases in each directory with Fasta_merge_files_and_filter_unique_sequences.py
