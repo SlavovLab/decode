@@ -39,7 +39,7 @@ Search for modified peptides in dependent peptide search results that may repres
 
 The code for this step can be found in ~/decode_pipeline/python_scripts. decode_pipeline/README.md contains detailed instructions for running this code. 
 
-### Step 4. Validation search with MaxQuant (or another prteomics data search engine)
+### Step 4. Validation search with MaxQuant (or another proteomics data search engine)
 Run a standard database search using the protein databases appended with candidate substituted peptides (step 3). 
 
 A sample MaxQuant paramater file is provided in MaxQuant_templates. The output from this validation search is required to proceed with the next steps of the pipeline. 
