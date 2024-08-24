@@ -14,3 +14,8 @@ gen_mqpar.py is a script that can be used to generate new MaxQuant parameter fil
 - Met oxidation and N-term acetylation variable modifications
 - If searching TMT data, set lcmsRunType = Standard and add TMT labels as fixed modifications
 - Cys carbamidomethyl fixed modification         
+
+
+## Running the validation search in MaxQuant
+1. Edit MQ parameter file with file paths of database with candidate SAAPs, and ensure dependent peptide parameter is set to False. 
+2. Otherwise the same as DP search.
