@@ -2,6 +2,7 @@
 
 [LINK TO WEBSITE]
 [LINK TO PREPRINT]
+[DOWNLOAD DATA]
 
 The code in this repository can be used to identify, validate, and quantify amino acid substitutions in LC-MS proteomics data that arise from alternate decoding of RNA. 
 
