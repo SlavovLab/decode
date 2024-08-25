@@ -19,6 +19,14 @@ environment.
 To seemlessly run all scripts you need to follow these steps:
 
 1. Make sure all software dependencies are met (see below!),
+
+In R (not all packages are required for each step), you can just run the
+[`install_packages.R`] script, or copy/paste the code below.
+
+``` bash
+R --vanilla < install_packages.R
+```
+
 2. Choose a location where you want to store input and output data,
    and tell the bash terminal about it:
 
