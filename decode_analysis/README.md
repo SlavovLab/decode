@@ -166,7 +166,7 @@ remotes::install_github("raim/segmenTools")
 	`uniprot_ensembl.dat.gz`, `uniprot_name.dat.gz`,
 	`gene_synonyms.tsv.gz`, `ensembl_refseq_20240528.tsv.gz`,
 	`protein_transcript_map.tsv`,
-	- A GO slim  GO term defintition file, `goslim.tsv.gz`,
+	- A GOslim term definition file, `goslim.tsv.gz`,
 	- Codon counts for all Ensembl transcripts, `coding_codons.tsv.gz`,
 	- A chromosome length/name index file, `sequenceIndex.csv.gz`,
 	- A human genome feature table, `features_GRCh38.110.tsv.gz`,
