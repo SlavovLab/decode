@@ -138,6 +138,8 @@ remotes::install_github("raim/segmenTools")
 
 ## Input Data
 
+The archive [`additionalData.zip`](https://drive.google.com/file/d/1uMiGDFmludOoBQpHWGX9CmXac2muMfKF/view?usp=drive_link) contains the following files, all required at different stages of the blast pipeline or the analysis.
+
 * `All_SAAP_TMTlevel_quant_df.txt.gz`: a tab-delimited and unfiltered
   (i.e. incl.  immunoglobulin genes) version of the official
   supplemental data file
