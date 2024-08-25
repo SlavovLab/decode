@@ -107,7 +107,9 @@ On debian/ubuntu this may work, but likely comes with a different version
 of blast (not tested):
 
 ``` bash
+sudo apt-get update
 sudo apt install ncbi-blast+
+sudo apt install r-base
 ```
 
 
