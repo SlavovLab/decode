@@ -32,13 +32,12 @@ where you replace the path by your favored location.
 3. Download the large required additional
    data file
    [`additionalData.zip`](https://drive.google.com/file/d/1uMiGDFmludOoBQpHWGX9CmXac2muMfKF/view?usp=drive_link)
-   and move and unpack it in this new directory:
+   and unpack it into this new directory:
    
    
    
 ``` bash
-mv <DOWNLOADPATH>/additionalData.zip $DECODE
-unzip additionalData.zip -d $DECODE
+unzip <DOWNLOADPATH>/additionalData.zip -d $DECODE
 ```
    
    
