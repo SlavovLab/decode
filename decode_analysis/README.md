@@ -31,7 +31,7 @@ where you replace the path my your favored location.
 
 3. Download the large required additional
    data file
-   [https://drive.google.com/file/d/1uMiGDFmludOoBQpHWGX9CmXac2muMfKF/view?usp=drive_link](additionalData.zip),
+   [`additionalData.zip`](https://drive.google.com/file/d/1uMiGDFmludOoBQpHWGX9CmXac2muMfKF/view?usp=drive_link)
    and move and unpack it in this new directory:
    
    
