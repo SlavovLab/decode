@@ -24,11 +24,12 @@ To seemlessly run all scripts you need to follow these steps:
 
 ``` bash
 export DECODE=/home/raim/data/decode
+mkdir $DECODE
 ```
 
 where you replace the path my your favored location.
 
-3. Generate this directory, download the large required additional
+3. Download the large required additional
    data file
    [https://drive.google.com/file/d/1uMiGDFmludOoBQpHWGX9CmXac2muMfKF/view?usp=drive_link](additionalData.zip),
    and move and unpack it in this new directory:
