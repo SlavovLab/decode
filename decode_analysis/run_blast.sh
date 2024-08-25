@@ -137,9 +137,11 @@ R --vanilla < get_protein_match.R &> $DECODE/log/protein_match.txt
 ## downloaded additionalData folder instead, to allow running
 ## the R analysis scripts that produce the final published figures, below.
 echo "collecting BP protein, transcript and genome coordinates" \
-     "and various structural data"
+     "and various structural data. Note that this script will abort" \
+     "if the genomeBrowser mammary data setup is not present."
 
-R --vanilla < map_peptides.R &> $DECODE/log/map_peptides.txt
+## not redirecting this to a log file to show error to user
+R --vanilla < map_peptides.R 
 
 
 
