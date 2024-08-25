@@ -27,7 +27,7 @@ export DECODE=/home/raim/data/decode
 mkdir $DECODE
 ```
 
-where you replace the path my your favored location.
+where you replace the path by your favored location.
 
 3. Download the large required additional
    data file
