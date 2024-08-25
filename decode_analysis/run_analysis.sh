@@ -16,7 +16,7 @@ fi
 ## data paths. This script also generates the
 ## "Supplemental_Data_7.SAAP_coordinates.tsv" as well as tables for
 ## unique protein sites used in the random forest model by Andrew Leduc.
-$myR --vanilla <  raas_init.R &> $DECODE/log/raas_init.txt  
+R --vanilla <  raas_init.R &> $DECODE/log/raas_init.txt  
 
 ### CALCULATE RAAS PROFILES and GENERATE PUBLICATION FIGURES
 R --vanilla < codons.R &> $DECODE/log/codons.txt  # FIGURE 2
