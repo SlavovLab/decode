@@ -665,8 +665,6 @@ table(dat[,"extracellular"], dat[,"IG"])
 
 
 ### WRITE OUT TABLE with positions for downstream analysis
-if ( !interactive() ) {
-    write.table(dat, file=out.file,
+write.table(dat, file=out.file,
                 sep="\t", quote=FALSE, na="", row.names=FALSE)
-}
 

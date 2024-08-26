@@ -53,13 +53,13 @@ muts <- sub(".*_","", ensm)
 names(muts) <- ensm # sub("_.*","", ensm)
 muts <- strsplit(muts, ",")
 
-## loop over all mutated proteins, replace mutations
-## and store full sequence
-
+## LOOP OVER ALL MUTATED PROTEINS, REPLACE MUTATIONS
+## AND STORE FULL SEQUENCE
 
 nseq <- list()
 errors <- matrix(FALSE, nrow=length(muts), ncol=3)
 colnames(errors) <- c("nprotein","mform","merr")
+
 for ( i in seq_along(muts) ) {
     
     sid <- sub("_.*","", names(muts)[i])
@@ -75,7 +75,9 @@ for ( i in seq_along(muts) ) {
                   "\t", sid,"\n"))
         errors[i,"mform"] <- TRUE
     } else {
-        ntar <- try(mutatePositions(seq, muts[[i]]))
+        ## TODO: allow indels in mutatePositions!
+        ## TODO: also catch mutations from the second variant calling pipeline
+        ntar <- try(segmenTools::mutatePositions(seq, muts[[i]]))
         if ( class(ntar)=="try-error" ) {
             cat(paste("PROBLEM:", i ,"introducing mutations failed:",
                       paste(muts[[i]], collapse=";"),
@@ -105,7 +107,7 @@ nnms <- sapply(names(nseq),
                           collapse=""))
 nnms <- tagDuplicates(nnms)
 
-## write out short/long name mapping
+### WRITE OUT short/long name mapping
 longnms <- cbind(onames, nnms)
 write.table(file=sub(".fa", ".tsv", out.file), sep="\t",
             x=longnms, quote=FALSE, col.names=FALSE, row.names=FALSE)
@@ -116,7 +118,7 @@ names(nseq) <- nnms
 ## add to fasta and write out
 ofas <- append(fas,nseq)
 
-## write out fasta
+### WRITE OUT FASTA: Ensembl proteins plus mutation-tags
 sink(file=file(out.file, open = "wt"))
 for ( i in seq_along(ofas) ) 
     cat(paste0(">", names(ofas)[i], "\n", ofas[[i]]$seq, "\n"))
