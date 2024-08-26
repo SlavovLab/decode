@@ -18,7 +18,7 @@ environment.
 
 To seamlessly run all scripts you need to follow these steps:
 
-1. Make sure all [software dependencies](#software) are met,
+1. Make sure all [software dependencies](#software-dependencies) are met,
 
 For R (not all packages are required for each step), you can just run the
 [`install_packages.R`](install_packages.R) script, or copy/paste the code below.
