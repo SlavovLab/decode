@@ -128,11 +128,11 @@ BiocManager::install("DiffLogo")
 
 ## from github
 ## https://josephcrispell.github.io/projects/basicplotter (2024-08-24),
-## https://github.com/raim/segmenTools (2024-08-24).
+## https://github.com/raim/segmenTools (release RAAS_preprint).
 if (!require("remotes", quietly = TRUE))
     install.packages("remotes")
 remotes::install_github("JosephCrispell/basicPlotteR")
-remotes::install_github("raim/segmenTools")
+remotes::install_github("raim/segmenTools@RAAS_preprint")
 ```
 
 
