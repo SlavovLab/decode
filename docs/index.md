@@ -8,7 +8,9 @@ permalink: /
 {% include social-media-links.html %}
 
 # Alternate RNA decoding
-<!-- {: .fs-6 .fw-300}  {: .fs-9 }   long_title: Multiplexed data-independent acquisition: plexDIA -->
+
+{: .fs-7 .fw-300}
+**Beyond the genetic code:** Alternate translation diversify mammalian proteomes
 
 ## Quantifying amino acid substitutions from alternate RNA decoding
 
