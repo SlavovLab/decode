@@ -3,7 +3,7 @@ layout: default
 title: Download data
 nav_order: 2
 permalink: mass-spec/data
-description: "Data repository with decode pipeline results"
+description: "Data repository for results from analyzing alternate RNA decoding, intermediate pipeline outputs and results"
 nav_exclude: false
 ---
 {% include social-media-links.html %}
