@@ -98,13 +98,13 @@ input/output path in the file [raas_init.R](raas_init.R).
 ### Bash
 
 Pre-processing and re-blasting of the base peptides happens in the bash
-script `run_blast.sh`. In additional to typically available tools on a
+script `run_blast.sh`. Besides typically available tools on a
 Linux bash (cat, grep, cut, awk, gunzip, rsync), the script requires
 NCBI's blast (**we used version 2.15.0+**) and a recent R version
 (>3.6) to be installed.
 
 On Debian/Ubuntu this may work, but likely comes with a different version
-of blast (not tested):
+of blast:
 
 ``` bash
 sudo apt-get update
