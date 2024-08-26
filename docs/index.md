@@ -10,7 +10,7 @@ permalink: /
 # Alternate RNA decoding
 
 {: .fs-6 .fw-300}
-**Beyond the genetic code:** Alternate translation
+**Alternate translation:** *Beyond the genetic code*
 
 
 &nbsp;
@@ -21,7 +21,9 @@ permalink: /
 
 ------------
 
-## Alternate RNA decoding results in stable and abundant proteins in mammals
+## Alternate RNA decoding results in stable and abundant proteins
+
+&nbsp;
 
 Amino acid substitutions may substantially alter protein stability and function, but the contribution of substitutions arising from alternate translation (deviations from the genetic code) is unknown. To explore it, we analyzed deep proteomic and transcriptomic data from over 1,000 human samples, including 6 cancer types and 26 healthy human tissues. This global analysis identified 60,024 high confidence substitutions corresponding to 8,801 unique sites in 1,990 proteins. Some substitutions are shared across samples, while others exhibit strong tissue-type and cancer specificity. Surprisingly, products of alternate translation are more abundant than their canonical counterparts for hundreds of proteins, suggesting sense codon recoding. Recoded proteins include transcription factors, proteases, signaling proteins, and proteins associated with neurodegeneration. Mechanisms contributing to substitution abundance include protein stability, codon frequency, codon-anticodon mismatches, and RNA modifications. We characterize sequence motifs around alternatively translated amino acids and how substitution ratios vary across protein domains, tissue types and cancers. Both the sequence and the tissue-specificity of alternatively translated proteins are conserved between human and mouse. These results demonstrate the contribution of alternate translation to diversifying mammalian proteomes, and its association with protein stability, tissue-specific proteomes, and diseases.  
 
