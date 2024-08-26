@@ -20,13 +20,14 @@ environment; simply adjust the `proj.path` variable in
 [`raas_init.R`](raas_init.R), the directory where you unpacked
 `additionalData.zip`.
 
-To seamlessly run all scripts you need to follow these steps:
+To run the **full mapping and analysis pipeline** you need to follow
+these steps:
 
 1. Make sure all software dependencies are met,
 
 Bash scripts should run on a standard Linux terminal (`cat`, `grep`,
 `cut`, `awk`, `gunzip`, `rsync`), and additionally require NCBI's
-blast (**we used version 2.15.0+**) and a recent R version (>3.6) to
+blast (**we used version 2.15.0+**) and a recent R version (>3.6.3) to
 be installed. For R, see [`install_packages.R`](install_packages.R).
 
 On Debian/Ubuntu this may work, but likely comes with a different version
@@ -36,6 +37,7 @@ of blast:
 sudo apt-get update
 sudo apt install ncbi-blast+
 sudo apt install r-base
+## install five R packages
 R --vanilla < install_packages.R
 ```
 
