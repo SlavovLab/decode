@@ -8,17 +8,22 @@ permalink: /
 {% include social-media-links.html %}
 
 # Alternate RNA decoding
-<!-- {: .fs-6 .fw-300}  {: .fs-9 }   long_title: Multiplexed data-independent acquisition: plexDIA -->
 
-## Quantifying amino acid substitutions from alternate RNA decoding
+{: .fs-6 .fw-300}
+*Beyond the genetic code*
+
 
 &nbsp;
 
 
-<!---[decode Article][plexDIA_Nature]{: .btn .fs-5 .mb-4 .mb-md-0 .mr-2 }--->
-[decode code on GitHub][decode_Code]{: .btn .fs-5 .mb-4 .mb-md-0 }
+[Decode article][Decode_article]{: .btn .fs-5 .mb-4 .mb-md-0 }
+[Decode code @ GitHub][decode_Code]{: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ------------
+
+## Alternate RNA decoding results in stable and abundant proteins
+
+&nbsp;
 
 Amino acid substitutions may substantially alter protein stability and function, but the contribution of substitutions arising from alternate translation (deviations from the genetic code) is unknown. To explore it, we analyzed deep proteomic and transcriptomic data from over 1,000 human samples, including 6 cancer types and 26 healthy human tissues. This global analysis identified 60,024 high confidence substitutions corresponding to 8,801 unique sites in 1,990 proteins. Some substitutions are shared across samples, while others exhibit strong tissue-type and cancer specificity. Surprisingly, products of alternate translation are more abundant than their canonical counterparts for hundreds of proteins, suggesting sense codon recoding. Recoded proteins include transcription factors, proteases, signaling proteins, and proteins associated with neurodegeneration. Mechanisms contributing to substitution abundance include protein stability, codon frequency, codon-anticodon mismatches, and RNA modifications. We characterize sequence motifs around alternatively translated amino acids and how substitution ratios vary across protein domains, tissue types and cancers. Both the sequence and the tissue-specificity of alternatively translated proteins are conserved between human and mouse. These results demonstrate the contribution of alternate translation to diversifying mammalian proteomes, and its association with protein stability, tissue-specific proteomes, and diseases.  
 
@@ -26,6 +31,11 @@ Amino acid substitutions may substantially alter protein stability and function,
 
 
 ------------
+
+## Quantifying amino acid substitutions from alternate RNA decoding
+
+This website contains links to resources for quantifying amino acids incorporated into proteins in deviation of the genetic code.  
+
 
 
 <!---[![plexDIA: Multiplexed data-independent acquisition for increasing proteomics throughput](https://scp.slavovlab.net/Figs/plexDIA_4.png){: width="100%" .center-image}](https://scp.slavovlab.net/plexDIA) --->
@@ -54,6 +64,5 @@ Contact the authors by email: [nslavov\{at\}northeastern.edu](mailto:nslavov@nor
 This project was supported by funding by an [Allen Distinguished Investigator Award](https://alleninstitute.org/person/nikolai-slavov/) from the Paul G. Allen Frontiers Group to N.S., an NIGMS award R01GM144967 to N.S., NCI awards UG3CA268117 and UH3CA268117 to N.S., and a MIRA award R35GM148218 from the NIGMS of to N.S.
 
 
-<!--- [plexDIA_Article]: https://doi.org/10.1101/2021.11.03.467007 "Multiplexed data-independent acquisition by plexDIA"
-[plexDIA_Nature]: https://doi.org/10.1038/s41587-022-01389-w "Derks, J., Slavov, N. et al. Increasing the throughput of sensitive proteomics by plexDIA. Nat Biotechnol (2022)" --->
+[Decode_article]: https://doi.org/10.1038/s41587-022-01389-w "Alternate RNA decoding results in stable and abundant proteins in mammals"
 [decode_Code]: https://github.com/SlavovLab/decode "Decode data analysis pipeline, GitHub repository from the Slavov Laboratory"
