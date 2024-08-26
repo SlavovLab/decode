@@ -13,7 +13,7 @@ in [`run_analysis.sh`](run_analysis.sh).
 **Figures only:** If you are only interested in the downstream
 analysis and generation of all published figures, you just need to
 [download the
-additionalData.zip](https://drive.google.com/file/d/1uMiGDFmludOoBQpHWGX9CmXac2muMfKF/view?usp=drive_link)
+`additionalData.zip`](https://drive.google.com/file/d/1uMiGDFmludOoBQpHWGX9CmXac2muMfKF/view?usp=drive_link)
 (step 3 below), and can directly use the R scripts called from
 [`run_analysis.sh`](run_analysis.sh) (step 5) in your favorite R
 environment; simply adjust the `proj.path` variable in
@@ -94,7 +94,7 @@ scripts to not use all data. Many analyses **do not require all data**. To
 use a freshly generated `saap_mapped.tsv` in downstream analyses (next
 step), you need to copy it from the processedData to the
 additionalData folder, overwriting the downloaded original, or adjust
-the path for this file in [raas_init.R](raas_init.R).
+the path for this file in [`raas_init.R`](raas_init.R).
 
 
 5. Run the bash script that analyses data and generates results plots
@@ -105,7 +105,7 @@ the path for this file in [raas_init.R](raas_init.R).
 
 **or alternatively open the R scripts called from this bash script in
 Rstudio**, make sure data is available as above, and modify the main
-input/output path in the file [raas_init.R](raas_init.R).
+input/output path in the file [`raas_init.R`](raas_init.R).
 
 
 
