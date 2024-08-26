@@ -9,7 +9,7 @@ permalink: /
 
 # Alternate RNA decoding
 
-{: .fs-7 .fw-300}
+{: .fs-6 .fw-300}
 **Beyond the genetic code:** Alternate translation diversify mammalian proteomes
 
 ## Quantifying amino acid substitutions from alternate RNA decoding
