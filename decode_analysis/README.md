@@ -13,7 +13,7 @@ in [`run_analysis.sh`](run_analysis.sh).
 **Figures only:** If you are only interested in the downstream
 analysis and generation of all published figures you just need to
 [download the
-data](https://drive.google.com/file/d/1uMiGDFmludOoBQpHWGX9CmXac2muMfKF/view?usp=drive_link)
+additionalData.zip](https://drive.google.com/file/d/1uMiGDFmludOoBQpHWGX9CmXac2muMfKF/view?usp=drive_link)
 (step 3 below), and can directly use the R scripts called from
 [`run_analysis.sh`](run_analysis.sh) (step 5) in in your favorite R
 environment; simply adjust the `proj.path` variable in
