@@ -11,20 +11,20 @@ youtube:
   fa-icon: 'fa-youtube-square'
 
 paper:
-  id: '10.1101/2021.11.03.467007'
+  id: '10.1101/2024.08.26.609665'
   href: 'https://doi.org/'
   title: 'Paper'
   fa-icon: 'fa-book'
 
 data:
   id: 'data'
-  href: 'https://plexdia.slavovlab.net/mass-spec/'
+  href: 'https://decode.slavovlab.net/mass-spec/'
   title: 'Data'
   fa-icon: 'fa-database'
 
 
 github:
-  id: 'plexDIA'
+  id: 'decode'
   href: 'https://github.com/SlavovLab/'
   title: 'GitHub'
   fa-icon: 'fa-github-square'
