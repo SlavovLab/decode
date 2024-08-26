@@ -84,11 +84,11 @@ performance computing, we provide `saap_mapped.tsv` with the
 If you do want to re-run the full pipeline, you need to generate this
 input data **or** modify the R script
 [`map_peptides.R`](map_peptides.R), and the downstream analysis
-scripts to not use all data. Many analyses do not require all
-data. Using a freshly generated `saap_mapped.tsv` in downstream
-analyses (next step), you need to copy it from the processedData to
-the additionalData folder, overwriting the downloaded original, or
-adjust the path for this file in [raas_init.R](raas_init.R).
+scripts to not use all data. Many analyses do not require all data. To
+use a freshly generated `saap_mapped.tsv` in downstream analyses (next
+step), you need to copy it from the processedData to the
+additionalData folder, overwriting the downloaded original, or adjust
+the path for this file in [raas_init.R](raas_init.R).
 
 
 5. Run the bash script that analyses data and generates results plots
