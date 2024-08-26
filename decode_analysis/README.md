@@ -119,7 +119,7 @@ The archive [`additionalData.zip`](https://drive.google.com/file/d/1uMiGDFmludOo
       (`Supplemental_Data_2.SAAP_proteins.xlsx`),
 * `saap_mapped.tsv.gz`: The main blast-based mapping file that holds
    various collected information for each unique BP/SAAP pair. The
-   columns of this file are detailed [below](#Columns-of-saap_mapped.tsv).
+   columns of this file are detailed [below](#Columns-of-saapmappedtsv).
 * 3 Supplemental Data tables from other publications: 
     - [Mathieson et
       al. 2018](https://doi.org/10.1038/s41467-018-03106-1),
