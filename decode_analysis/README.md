@@ -48,10 +48,8 @@ mkdir $DECODE
 
 where you replace the path by your favored location.
 
-3. Download the large required additional
-   data file
-   [`additionalData.zip`](https://drive.google.com/file/d/1uMiGDFmludOoBQpHWGX9CmXac2muMfKF/view?usp=drive_link)
-   and unpack it into this new directory:
+3. Download the [`additionalData.zip`](https://drive.google.com/file/d/1uMiGDFmludOoBQpHWGX9CmXac2muMfKF/view?usp=drive_link)
+   and unpack it into this new directory `$DECODE`:
    
    
    
@@ -61,8 +59,8 @@ unzip <DOWNLOADPATH>/additionalData.zip -d $DECODE
    
    
 4. Run the bash script that blasts all BP/SAAP data, and collects various
-structural information for the best-matching protein, transcript 
-and genome site.
+structural information for the best-matching protein sites, and its transcript 
+and genome coordinates.
 
 
 ``` bash
