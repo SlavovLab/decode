@@ -111,9 +111,12 @@ The archive [`additionalData.zip`](https://drive.google.com/file/d/1uMiGDFmludOo
 * Tab-delimited and unfiltered versions of three official supplemental
   data tables; these include BP/SAAP from immunoglobulin genes and
   other artefacts:
-    - `All_SAAP_TMTlevel_quant_df.txt.gz` (`Supplemental_Data_3.SAAP_precursor_quant.xlsx`),
-* `All_SAAP_patient_level_quant_df.txt.gz` (`Supplemental_Data_4.SAAP_reporter_quant.xlsx`),
-* `All_SAAP_protein_filter_df.txt.gz` (`Supplemental_Data_2.SAAP_proteins.xlsx`),
+    - `All_SAAP_TMTlevel_quant_df.txt.gz`
+      (`Supplemental_Data_3.SAAP_precursor_quant.xlsx`),
+    - `All_SAAP_patient_level_quant_df.txt.gz`
+      (`Supplemental_Data_4.SAAP_reporter_quant.xlsx`),
+    - `All_SAAP_protein_filter_df.txt.gz`
+      (`Supplemental_Data_2.SAAP_proteins.xlsx`),
 * `saap_mapped.tsv.gz`: The main blast-based mapping file that holds
    various collected information for each unique BP/SAAP pair. The
    columns of this file are detailed [below](#Columns-of-saap_mapped.tsv).
