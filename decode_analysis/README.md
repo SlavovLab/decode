@@ -18,14 +18,25 @@ environment.
 
 To seamlessly run all scripts you need to follow these steps:
 
-1. Make sure all [software dependencies](#software-dependencies) are met,
+1. Make sure all software dependencies are met,
 
-For R (not all packages are required for each step), you can just run the
-[`install_packages.R`](install_packages.R) script, or copy/paste the code below.
+Bash scripts should run on a standard Linux terminal, and additionally
+require NCBI's blast (**we used version 2.15.0+**) and a recent R
+version (>3.6) to be installed. For R, see
+[`install_packages.R`](install_packages.R).
+
+On Debian/Ubuntu this may work, but likely comes with a different version
+of blast:
 
 ``` bash
+sudo apt-get update
+sudo apt install ncbi-blast+
+sudo apt install r-base
 R --vanilla < install_packages.R
 ```
+
+
+
 
 2. Choose a location where you want to store input and output data,
    and tell the bash terminal about it:
@@ -93,47 +104,6 @@ Rstudio**, make sure data is available as above, and modify the main
 input/output path in the file [raas_init.R](raas_init.R).
 
 
-## Software Dependencies
-
-### Bash
-
-Pre-processing and re-blasting of the base peptides happens in the bash
-script `run_blast.sh`. Besides typically available tools on a
-Linux bash (cat, grep, cut, awk, gunzip, rsync), the script requires
-NCBI's blast (**we used version 2.15.0+**) and a recent R version
-(>3.6) to be installed.
-
-On Debian/Ubuntu this may work, but likely comes with a different version
-of blast:
-
-``` bash
-sudo apt-get update
-sudo apt install ncbi-blast+
-sudo apt install r-base
-```
-
-
-### R
-
-``` r
-
-## from CRAN
-install.packages("viridis")
-install.packages("readxl")
-
-## from BioConductor
-if (!require("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-BiocManager::install("DiffLogo")
-
-## from github
-## https://josephcrispell.github.io/projects/basicplotter (2024-08-24),
-## https://github.com/raim/segmenTools (release RAAS_preprint).
-if (!require("remotes", quietly = TRUE))
-    install.packages("remotes")
-remotes::install_github("JosephCrispell/basicPlotteR")
-remotes::install_github("raim/segmenTools@RAAS_preprint")
-```
 
 
 ## Input Data
@@ -150,7 +120,7 @@ The archive [`additionalData.zip`](https://drive.google.com/file/d/1uMiGDFmludOo
   `Supplemental_Data_2.SAAP_proteins.xlsx`,
 * `saap_mapped.tsv.gz`: The main blast-based mapping file that holds
    various collected information for each unique BP/SAAP pair. The
-   columns of this file are detailed below.
+   columns of this file are detailed [below](#Columns-of-saap_mapped.tsv).
 * 3 Supplemental Data tables from other publications: 
     - [Mathieson et
       al. 2018](https://doi.org/10.1038/s41467-018-03106-1),
