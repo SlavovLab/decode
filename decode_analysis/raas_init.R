@@ -54,7 +54,10 @@ fig.path <- file.path(proj.path,"figures")
 
 ## figures of this init script
 ifig.path <- file.path(fig.path,"init")
-dir.create(ifig.path)
+
+## CREATE DIRECTORIES FOR OUTPUT
+dir.create(out.path, recursive=TRUE, showWarnings=FALSE)
+dir.create(ifig.path, recursive=TRUE, showWarnings=FALSE)
 
 
 
