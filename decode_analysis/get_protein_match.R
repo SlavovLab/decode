@@ -24,8 +24,10 @@ out.file <- file.path(proj.path,"processedData","bp_mapped.tsv")
 ##tpmap.file <- file.path(mam.path,"originalData","protein_transcript_map.tsv")
 
 ## USING LOCAL COPIES INSTEAD (for publication git)!
-feature.file <- file.path(proj.path,"additionalData","features_GRCh38.110.tsv.gz")
-tpmap.file <- file.path(proj.path,"additionalData","protein_transcript_map.tsv.gz")
+feature.file <- file.path(proj.path,"additionalData",
+                          "features_GRCh38.110.tsv.gz")
+tpmap.file <- file.path(proj.path,"additionalData",
+                        "protein_transcript_map.tsv.gz")
 
 
 ### LOAD & ANNOTATE BLAST RESULTS
@@ -92,7 +94,7 @@ bp <- bp[order(bp$identity,
 all <- bp ## store to analyze missing below
 
 ## filter - only those where we found a gene, others
-## w/o gene are encoded on scaffolds, TODO: check all.
+## w/o gene are encoded on scaffolds and not included in the Ensembl fasta
 ina <- is.na(bp$gene)
 cat(paste("removing", sum(ina), "blast hits without a mapped gene!\n"))
 bp <- bp[!ina,] # proteins annotated to a scaffold
@@ -177,8 +179,8 @@ all$exclude <- all$globin|all$albumin|all$IG
 ## ADD GENE NAME
 all$name <- features$name[gidx[all$ensembl]]
 
-if ( !interactive() ) {
-    write.table(all, file=out.file, sep="\t",
+### WRITE OUT BP:protein mapping and annotation
+write.table(all, file=out.file, sep="\t",
                 quote=FALSE, na="", row.names=FALSE)
-}
+
 

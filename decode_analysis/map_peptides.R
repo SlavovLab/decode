@@ -2,8 +2,6 @@
 ## MAP AAS TO ENSEMBL PROTEINS & TRANSCRIPTS
 ## and collect sequence & structure data at AAS.
 
-## TODO: also load full list of unique SAAP/BP and do
-## statistics on blast, AA and codon matching.
 
 library(segmenTools)
 options(stringsAsFactors=FALSE)
@@ -22,11 +20,11 @@ feature.file <- file.path(mam.path,"features_GRCh38.110.tsv")
 if ( !file.exists(feature.file) )
     stop("genome feature table file not found. This script requires ",
          "setup of genomic data via the genomeBrowser/data/mammary/setup.sh. ",
-         "If you have setup this, please provide the path here as `mam.path` ",
-         "and either change the path of the saap_mapped.tsv input or copy ",
-         "it from processedData to additionalData.\n",
-         "NOTE that the R analysis can still be run, since we provide ",
-         "the output of this script, saap_mapped.tsv")
+         "If you have set this up, please provide the path here as `mam.path` ",
+         "and either change the path of the saap_mapped.tsv input or gzip and ",
+         "copy it from processedData to additionalData.\n",
+         "NOTE, that the downstream analysis can still be run, since we ",
+         "provide the output of this script, saap_mapped.tsv")
 
 
 ## DECODE DATA
@@ -164,7 +162,7 @@ rownames(utr) <- pamrt[rownames(utr),1]
 
 ## s4pred
 s4p <- readFASTA(s4pred, grepID=TRUE)
-## skip version number - TODO: use version numbers!
+## skip version number - TODO: use version numbers?
 names(s4p) <- sub("\\.[0-9]+", "", names(s4p))
 ## reorder
 cat(paste("s4pred:", sum(!names(fas)%in%names(s4p)), "proteins not found\n"))
@@ -195,7 +193,7 @@ colnames(pfd) <- c("seq id", "alignment start",
 ## add ensembl ID
 pfd$ensembl <- uni2ens[match(pfd[,1], uni2ens[,1]),2]
 
-## OWN PFAM/hmmer predictions - TODO, more likely to be correct!!
+## OWN PFAM/hmmer predictions 
 pfm <- read.csv(file=pfam.file, sep=";", fill=FALSE,
                 header=FALSE, comment.char="#")
 pfmh <- c(
@@ -276,14 +274,6 @@ for ( i in 1:nrow(dat) ) {
    
     oid <- dat$protein[i] # ID with mutation index
     gid <- dat$ensembl[i] # original gene ID
-
-    ## TODO: use MANE already here?
-    ## problem is that we use oid for AAS mapping
-    if ( FALSE ) {
-        gid <- dat$MANE.protein[i] # original gene ID
-        if ( is.na(gid)|gid=="" ) 
-            gid <- dat$ensembl[i]
-    }
 
     j <- which(names(fas)==oid)
     if ( length(j)==0 ) { # 
@@ -374,7 +364,7 @@ for ( i in 1:nrow(dat) ) {
         }
     }
 
-    ## GET s4pred
+    ## GET S4Pred
     s4s <- s4p[[gid]]
     if ( is.null(s4s) ) {
         cat(paste("WARNING:", i, "no s4pred found for", oid, "\n"))
@@ -393,7 +383,7 @@ for ( i in 1:nrow(dat) ) {
         }
     }
 
-    ## GET IUPRED3
+    ## GET IUPred3
     ## TODO: remove version tag from iupred files to avoid searching!
     ## or search once above
     iufile <- iufiles[gid]
@@ -414,11 +404,6 @@ for ( i in 1:nrow(dat) ) {
             anbg[i] <- mean(iud[, 4])
             iubg[i] <- mean(iud[, 3])
         }
-
-        ## NOTE: COPY TO SELECTED FOLDER FOR TRANSFER TO LAPTOP
-        tof <- file.path(paste0(iupred,"_selected"),iufile)
-        if ( Sys.info() ["nodename"]=="exon" ) 
-            file.copy(from=file.path(iupred,iufile), to=tof, overwrite = FALSE)
     }
 
     ## get describePROT data
@@ -680,8 +665,6 @@ table(dat[,"extracellular"], dat[,"IG"])
 
 
 ### WRITE OUT TABLE with positions for downstream analysis
-if ( !interactive() ) {
-    write.table(dat, file=out.file,
+write.table(dat, file=out.file,
                 sep="\t", quote=FALSE, na="", row.names=FALSE)
-}
 

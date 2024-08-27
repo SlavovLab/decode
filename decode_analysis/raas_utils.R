@@ -2,9 +2,10 @@
 
 ### PLOT UTILS
 
-## COLOR FUNCTION ARNO
-## generate colors similar to inferno but with
-## a better yellow (viridis)
+## COLOR-RAMP PALETTE ARNO
+## generate colors similar to viridis::inferno but with a more visible
+## yellow, taken from viridis::viridis. Named after Arno because it
+## was his birthday:
 mcol <- viridis::inferno(5)
 vcol <- viridis::viridis(5)
 mcol[5] <- vcol[5]
