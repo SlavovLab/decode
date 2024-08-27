@@ -3,7 +3,7 @@
 ![GitHub](https://img.shields.io/github/license/SlavovLab/DO-MS.svg)
 
 * [Decode Website](https://decode.slavovlab.net) &nbsp; | &nbsp; [Download data](https://decode.slavovlab.net/mass-spec/data)
-* [Preprint article](https://decode.slavovlab.net)
+* [Preprint article](https://doi.org/10.1101/2024.08.26.609665)
 
 
 The code in this repository can be used to identify, validate, and quantify amino acid substitutions in LC-MS proteomics data that arise from alternate decoding of RNA.
