@@ -13,7 +13,7 @@ if ( proj.path=="" ){
 RAAS_data = read.delim(paste0(proj.path,'/processedData/sites_raas_unique.tsv'),sep = '\t',row.names = NULL)
 RAAS_data = RAAS_data %>% filter(as.numeric(RAAS.n) > 1)
 
-feat_list =  c('MMSeq2','flDPnn','DisoRDPbind','protein.halflife','iupred3','anchor2') # c('MMSeq2','protein.halflife','iupred3','anchor2')
+feat_list =  c('MMSeq2','protein.halflife','iupred3','protein.length')# c('MMSeq2','flDPnn','DisoRDPbind','protein.halflife','iupred3','anchor2') # c('MMSeq2','protein.halflife','iupred3','anchor2')
 
 
 
