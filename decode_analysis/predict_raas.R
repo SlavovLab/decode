@@ -8,7 +8,8 @@ proj.path <- file.path(Sys.getenv("DECODE"))
 if ( proj.path=="" ){
   proj.path <- "/home/raim/data/decode" # author's local path
 } 
-  
+
+dir.create(file.path(proj.path,'figures','model'), showWarnings=FALSE, recursive=TRUE)
 
 RAAS_data = read.delim(paste0(proj.path,'/processedData/sites_raas_unique.tsv'),sep = '\t',row.names = NULL)
 RAAS_data = RAAS_data %>% filter(as.numeric(RAAS.n) > 1)
@@ -117,8 +118,8 @@ p2 <- ggplot(df_xg,aes(y = feat_store, x = (cor_list))) + geom_boxplot() +
 write.csv(df_xg,paste0(proj.path,'/processedData/xgboost_leave_one_out.csv'))
 write.csv(df_plot,paste0(proj.path,'/processedData/xgboost_plot.csv'))
 
-ggsave(filename = paste0(proj.path,'/figures/xgboost_scatter.png'), plot = p1, width = 8, height = 6, dpi = 300)        
-ggsave(filename = paste0(proj.path,'/figures/xgboost_features.png'), plot = p2, width = 8, height = 6, dpi = 300)        
+ggsave(filename = paste0(proj.path,'/figures/model/xgboost_scatter.png'), plot = p1, width = 8, height = 6, dpi = 300)        
+ggsave(filename = paste0(proj.path,'/figures/model/xgboost_features.png'), plot = p2, width = 8, height = 6, dpi = 300)        
 
           
           
