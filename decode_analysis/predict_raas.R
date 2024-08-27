@@ -103,14 +103,16 @@ df_xg$cor_list <- (as.numeric(df_xg$cor_list) - median(cor_list_all)) /median(co
 df_xg$cor_list <- abs(df_xg$cor_list)
 df_xg$feat_store <- with(df_xg, reorder(feat_store, cor_list, median))
 
+df_plot <- as.data.frame(predictions)
+df_plot$gt <- test$RAAS.mean
+
 p1 <- ggplot(df_plot,aes(y = predictions, x =gt )) + geom_point() + 
     xlab('Measured') + ylab('Predicted') +ggtitle('log10 RAAS')
 
 p2 <- ggplot(df_xg,aes(y = feat_store, x = (cor_list))) + geom_boxplot() + 
     xlab('% gain of feature') + coord_cartesian(xlim = c(0,20)) + ylab('')
 
-df_plot <- as.data.frame(predictions)
-df_plot$gt <- test$RAAS.mean
+
 
 write.csv(df_xg,paste0(proj.path,'/processedData/xgboost_leave_one_out.csv'))
 write.csv(df_plot,paste0(proj.path,'/processedData/xgboost_plot.csv'))
