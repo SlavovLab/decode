@@ -13,9 +13,9 @@ in [`run_analysis.sh`](run_analysis.sh).
 **Figures only:** If you are only interested in the downstream
 analysis and generation of published figures, you just need to
 [download](https://drive.google.com/file/d/1uMiGDFmludOoBQpHWGX9CmXac2muMfKF/view?usp=drive_link)
-the [`additionalData.zip`](#additionaldata) (step 3 below), and can
-run the R scripts called from [`run_analysis.sh`](run_analysis.sh)
-(step 5) in your favorite R environment; simply adjust the `proj.path`
+the [`additionalData.zip`](#additionaldata) (step 3 below), and run
+the R scripts called from [`run_analysis.sh`](run_analysis.sh) (step
+5) in your favorite R environment; simply adjust the `proj.path`
 variable in [`raas_init.R`](raas_init.R), the directory where you
 unpacked `additionalData.zip`.
 
