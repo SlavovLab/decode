@@ -1,3 +1,8 @@
+library(dplyr)
+library(ggplot2)
+library(xgboost)
+options(stringsAsFactors=FALSE) # required for R<4
+
 
 proj.path <- file.path(Sys.getenv("DECODE")) 
 if ( proj.path=="" ){
@@ -5,7 +10,7 @@ if ( proj.path=="" ){
 } 
   
 
-RAAS_data = read.delim(paste0(proj.path,'/processedData/sites_raas_unique.tsv'),sep = ' ',row.names = NULL)
+RAAS_data = read.delim(paste0(proj.path,'/processedData/sites_raas_unique.tsv'),sep = '\t',row.names = NULL)
 RAAS_data = RAAS_data %>% filter(as.numeric(RAAS.n) > 1)
 
 test_rows = sample(1:nrow(RAAS_data),round(nrow(RAAS_data)*.8))
