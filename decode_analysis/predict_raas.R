@@ -117,8 +117,8 @@ p2 <- ggplot(df_xg,aes(y = feat_store, x = (cor_list))) + geom_boxplot() +
 write.csv(df_xg,paste0(proj.path,'/processedData/xgboost_leave_one_out.csv'))
 write.csv(df_plot,paste0(proj.path,'/processedData/xgboost_plot.csv'))
 
-ggsave(filename = paste0(proj.path,'/decode_figures/xgboost_scatter.png'), plot = p1, width = 8, height = 6, dpi = 300)        
-ggsave(filename = paste0(proj.path,'/decode_figures/xgboost_features.png'), plot = p2, width = 8, height = 6, dpi = 300)        
+ggsave(filename = paste0(proj.path,'/figures/xgboost_scatter.png'), plot = p1, width = 8, height = 6, dpi = 300)        
+ggsave(filename = paste0(proj.path,'/figures/xgboost_features.png'), plot = p2, width = 8, height = 6, dpi = 300)        
 
           
           
