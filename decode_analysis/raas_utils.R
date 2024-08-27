@@ -4,7 +4,7 @@
 
 ## COLOR FUNCTION ARNO
 ## generate colors similar to inferno but with
-## a better yellow (viridis), name after Arno
+## a better yellow (viridis), named after Arno
 ## because it was his birthday
 mcol <- viridis::inferno(5)
 vcol <- viridis::viridis(5)
