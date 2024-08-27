@@ -141,7 +141,7 @@ The archive [`additionalData.zip`](https://drive.google.com/file/d/1uMiGDFmludOo
   https://gitlab.com/raim/genomeBrowser, project path `data/mammary`,
   and release `RAAS_preprint`; see script `data/mammary/setup.sh`,
   which calls all download and processing steps:
-	- Various Ensembl <-> refseq/uniprot/gene name synonym mappings,
+	- Various Ensembl <-> refseq/uniprot/synonym mappings,
 	`uniprot_ensembl.dat.gz`, `uniprot_name.dat.gz`,
 	`gene_synonyms.tsv.gz`, `ensembl_refseq_20240528.tsv.gz`,
 	`protein_transcript_map.tsv.gz`,
