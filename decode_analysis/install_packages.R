@@ -4,6 +4,7 @@
 ## from CRAN
 install.packages("viridis")
 install.packages("readxl")
+install.packages("xgboost")
 
 ## from BioConductor
 if (!require("BiocManager", quietly = TRUE))
