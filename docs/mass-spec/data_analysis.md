@@ -14,7 +14,7 @@ nav_exclude: false
 &nbsp;
 
 {: .fs-5 .fw-300}
-This section organizes instructions and links to software and pipelines for identifying, validating, and quantifying amino acid substitutions from alternate RNA decoding. 
+This section organizes instructions and links to software and pipelines for identifying, validating, and quantifying amino acid substitutions from alternate RNA decoding.
 
 * Will be replaced with the ToC, excluding the section header
 {:toc}
@@ -26,7 +26,7 @@ This section organizes instructions and links to software and pipelines for iden
 
 ### Pipeline for generating custom protein databases
 
-This [pipeline](https://github.com/SlavovLab/decode/tree/main/custom_protein_database_pipeline) is used for generating sample-specific protein fasta databases from RNA-seq data. 
+This [pipeline](https://github.com/SlavovLab/decode/tree/main/custom_protein_database_pipeline) is used for generating sample-specific protein fasta databases from RNA-seq data.
 
 -------
 
@@ -36,19 +36,19 @@ This [pipeline](https://github.com/SlavovLab/decode/tree/main/custom_protein_dat
 
 ## Identifying, validating, and quantifying amino acid substitutions from alternate RNA decoding
 
-### Find modified peptides in LC-MS proteomics data with MaxQuant dependent peptide search 
-Search LC-MS proteomics data with [MaxQuant](https://www.maxquant.org/) dependent peptide search against sample-specific protein databases to identify peptides with modifications which may represent amino acid substitutions. 
+### Find modified peptides in LC-MS proteomics data with MaxQuant dependent peptide search
+Search LC-MS proteomics data with [MaxQuant](https://www.maxquant.org/) dependent peptide search against sample-specific protein databases to identify peptides with modifications which may represent amino acid substitutions.
 
 Sample [MaxQuant parameter file](https://github.com/SlavovLab/decode/tree/main/MaxQuant_templates) is provided in the [decode GitHub repository](https://github.com/SlavovLab/decode).
 
-A [useful tutorial](https://atchen.me/research/2019/03/21/mq-linux.html) for running MaxQuant searches in Linux. 
+A [useful tutorial](https://atchen.me/research/2019/03/21/mq-linux.html) for running MaxQuant searches in Linux.
 
 ### Identify candidate <u>s</u>ubstituted <u>a</u>mino <u>a</u>cid <u>p</u>eptides (SAAP)
 Apply [decode pipeline](https://github.com/SlavovLab/decode/decode_pipeline) steps 1 and 2 to identify peptides with potential amino acid substitutions from alternate RNA decoding. See [detailed pipeline instructions](https://github.com/SlavovLab/decode/tree/main/decode_pipeline#readme).
 
 ### Validate SAAP
 [Decode pipeline](https://github.com/SlavovLab/decode/decode_pipeline) step 3.
-Search LC-MS proteomics data with [MaxQuant](https://www.maxquant.org/) (or other search engine) standard database search against sample-specific protein databases appended with candidate SAAP. 
+Search LC-MS proteomics data with [MaxQuant](https://www.maxquant.org/) (or other search engine) standard database search against sample-specific protein databases appended with candidate SAAP.
 
 Sample [MaxQuant parameter file](https://github.com/SlavovLab/decode/tree/main/MaxQuant_templates) is provided in the [decode GitHub repository](https://github.com/SlavovLab/decode).
 
@@ -56,7 +56,7 @@ Sample [MaxQuant parameter file](https://github.com/SlavovLab/decode/tree/main/M
 Apply [decode pipeline](https://github.com/SlavovLab/decode/decode_pipeline) steps 4 and 5 to quantify validated amino acid substitutions from alternate RNA decoding. See [detailed pipeline instructions](https://github.com/SlavovLab/decode/tree/main/decode_pipeline#readme).
 
 
-Results from running [decode pipeline](https://github.com/SlavovLab/decode/decode_pipeline) on TMT-labeled and label-free datasets, as described in [LINK TO ARTICLE]() are provided in [decode data directory](https://drive.google.com/drive/u/3/folders/15YoTBTZh4MdtAqHbibkYieEqyLyFi5hb).
+Results from running [decode pipeline](https://github.com/SlavovLab/decode/decode_pipeline) on TMT-labeled and label-free datasets, as described by [Tsour *et al*][Decode_article] are provided in [decode data directory](https://drive.google.com/drive/u/3/folders/15YoTBTZh4MdtAqHbibkYieEqyLyFi5hb).
 
 -------
 
@@ -78,7 +78,7 @@ Results from running [decode pipeline](https://github.com/SlavovLab/decode/decod
 
 
 ## Data pipelines for reproducing decode data analysis
-A [pipeline][decode_Code] for reproducing the analysis by [Tsour et al][LINK TO ARTICLE] is available at the [decode GitHub repository][decode_Code].  
+A [pipeline][decode_Code] for reproducing the analysis by [Tsour *et al*][Decode_article] is available at the [decode GitHub repository][decode_Code].  
 
 
 * [Pipeline for processing RNA-seq data through custom protein database pipeline @ GitHub](https://github.com/SlavovLab/decode/custom_protein_database_pipeline)
@@ -87,6 +87,7 @@ A [pipeline][decode_Code] for reproducing the analysis by [Tsour et al][LINK TO 
 -------
 
 
+[Decode_article]: https://www.biorxiv.org/content/10.1101/2024.08.26.609665v1 "Alternate RNA decoding results in stable and abundant proteins in mammals"
 
 &nbsp;  
 
