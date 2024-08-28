@@ -64,7 +64,7 @@ Results from running [decode pipeline](https://github.com/SlavovLab/decode/decod
 &nbsp;
 
 
-[Detailed methods][Decode_article] are found in the article, [Tsour *et al*][Decode_article].
+[Detailed methods](https://www.biorxiv.org/content/10.1101/2024.08.26.609665v1.full#:~:text=confirmed%20this%20result.-,Methods,-Sample%2Dspecific%20protein) are found in the article, [Tsour *et al*][Decode_article].
 
 
 <!--- [plexDIA_Article]: https://doi.org/10.1101/2021.11.03.467007 "Multiplexed data-independent acquisition by plexDIA"

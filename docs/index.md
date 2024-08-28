@@ -2,7 +2,7 @@
 layout: default
 title: Home
 nav_order: 1
-description: Identification, validation, and quantification of amino acid substitutions that arise from alternate RNA decoding using LC-MS proteomics data | Slavov Laboratory and single-cell proteomics center
+description: Identification, validation, and quantification of amino acid substitutions that arise from alternate RNA decoding using LC-MS/MS proteomics data | Slavov Laboratory and single-cell proteomics center
 permalink: /
 ---
 {% include social-media-links.html %}
@@ -27,7 +27,7 @@ permalink: /
 
 Amino acid substitutions may substantially alter protein stability and function, but the contribution of substitutions arising from alternate translation (deviations from the genetic code) is unknown. To explore it, we analyzed deep proteomic and transcriptomic data from over 1,000 human samples, including 6 cancer types and 26 healthy human tissues. This global analysis identified 60,024 high confidence substitutions corresponding to 8,801 unique sites in 1,990 proteins. Some substitutions are shared across samples, while others exhibit strong tissue-type and cancer specificity. Surprisingly, products of alternate translation are more abundant than their canonical counterparts for hundreds of proteins, suggesting sense codon recoding. Recoded proteins include transcription factors, proteases, signaling proteins, and proteins associated with neurodegeneration. Mechanisms contributing to substitution abundance include protein stability, codon frequency, codon-anticodon mismatches, and RNA modifications. We characterize sequence motifs around alternatively translated amino acids and how substitution ratios vary across protein domains, tissue types and cancers. Both the sequence and the tissue-specificity of alternatively translated proteins are conserved between human and mouse. These results demonstrate the contribution of alternate translation to diversifying mammalian proteomes, and its association with protein stability, tissue-specific proteomes, and diseases.  
 
-* Tsour, S., Machne, R., *et al.* [Alternate RNA decoding results in stable and abundant proteins in mammals][Decode_article], *bioRxiv* 2024.08.26.609665, 2024. <!---*Nat Biotechnol* (2022). [10.1038/s41587-022-01389-w][plexDIA_Nature],  [Preprint][plexDIA_Article]--->
+* Tsour, S., Machne, R., *et al.* [Alternate RNA decoding results in stable and abundant proteins in mammals][Decode_article], *bioRxiv* 2024.08.26.609665, 2024. [PDF](https://slavovlab.net/Slavov-Lab-Publications/2024_Tsour_Decode.pdf) <!---*Nat Biotechnol* (2022). [10.1038/s41587-022-01389-w][plexDIA_Nature],  [Preprint][plexDIA_Article]--->
 
 
 ------------
@@ -56,7 +56,7 @@ This website contains links to resources for quantifying amino acids incorporate
 
 ## About the project
 
-decode is a project developed in the [Slavov Laboratory](https://slavovlab.net) at [Northeastern University](https://www.northeastern.edu/). It was authored by [Shira Tsour](https://slavovlab.net/people.htm), [Rainer Machne](https://slavovlab.net/people.htm) [Andrew Leduc](http://andrewdleduc.com/), [Simon Widmer] and [Nikolai Slavov](https://coe.northeastern.edu/people/slavov-nikolai/).   
+Decode is a project developed in the [Slavov Laboratory](https://slavovlab.net) at [Northeastern University](https://www.northeastern.edu/). It was authored by [Shira Tsour](https://slavovlab.net/people.htm), [Rainer Machne](https://slavovlab.net/people.htm) [Andrew Leduc](http://andrewdleduc.com/), [Simon Widmer](https://slavovlab.net/people.htm) and [Nikolai Slavov](https://coe.northeastern.edu/people/slavov-nikolai/).   
 
 
 Contact the authors by email: [nslavov\{at\}northeastern.edu](mailto:nslavov@northeastern.edu).
