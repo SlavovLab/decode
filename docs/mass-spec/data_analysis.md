@@ -64,7 +64,7 @@ Results from running [decode pipeline](https://github.com/SlavovLab/decode/decod
 &nbsp;
 
 
-[Detailed methods]() are found in article reference [LINK TO ARTICLE]().
+[Detailed methods][Decode_article] are found in the article, [Tsour *et al*][Decode_article].
 
 
 <!--- [plexDIA_Article]: https://doi.org/10.1101/2021.11.03.467007 "Multiplexed data-independent acquisition by plexDIA"
