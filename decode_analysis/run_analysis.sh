@@ -30,3 +30,6 @@ R --vanilla < structure.R &> $DECODE/log/structure.txt  # EFig. 10b,c
 R --vanilla < rna.R &> $DECODE/log/rna.txt # SFig. 2
 
 ## TODO: add 1d protein plots and chimeraX generating code
+
+## xgboost prediction by Andrew Leduc
+R --vanilla < predict_raas.R &> $DECODE/log/predict_raas.txt # Fig. 5d

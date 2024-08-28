@@ -4,6 +4,9 @@
 ## from CRAN
 install.packages("viridis")
 install.packages("readxl")
+install.packages("xgboost")
+install.packages("ggplot2")
+install.packages("dplyr")
 
 ## from BioConductor
 if (!require("BiocManager", quietly = TRUE))
