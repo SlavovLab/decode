@@ -36,6 +36,10 @@ Amino acid substitutions may substantially alter protein stability and function,
 
 This website contains links to resources for quantifying amino acids incorporated into proteins in deviation of the genetic code.  
 
+&nbsp;
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F4-PUuz5kcQ?si=HLhMU-2YbltqILvG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 
 <!---[![plexDIA: Multiplexed data-independent acquisition for increasing proteomics throughput](https://scp.slavovlab.net/Figs/plexDIA_4.png){: width="100%" .center-image}](https://scp.slavovlab.net/plexDIA) --->
@@ -44,6 +48,7 @@ This website contains links to resources for quantifying amino acids incorporate
 ------------
 
 
+&nbsp;
 
 <!--- ## Perspectives on high-throughput multiplexed proteomics
 * [Strategies for increasing the depth and throughput of protein analysis by plexDIA](https://pubs.acs.org/doi/10.1021/acs.jproteome.2c00721)  *Journal of Proteome Research*
