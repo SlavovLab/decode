@@ -1,6 +1,6 @@
 # Decode: Computational pipeline for quantifying amino acid substitutions from alternate RNA decoding
 
-![GitHub](https://img.shields.io/github/license/SlavovLab/DO-MS.svg)
+The code is avilable under **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)** license 
 
 * [Decode Website](https://decode.slavovlab.net) &nbsp; | &nbsp; [Download data](https://decode.slavovlab.net/mass-spec/data)
 * [Preprint article](https://doi.org/10.1101/2024.08.26.609665)
