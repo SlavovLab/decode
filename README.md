@@ -1,6 +1,6 @@
 # Decode: Computational pipeline for quantifying amino acid substitutions from alternate RNA decoding
 
-The code is avilable under **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)** license 
+
 
 * [Decode Website](https://decode.slavovlab.net) &nbsp; | &nbsp; [Download data](https://decode.slavovlab.net/mass-spec/data)
 * [Preprint article](https://doi.org/10.1101/2024.08.26.609665)
@@ -10,7 +10,7 @@ The code in this repository can be used to identify, validate, and quantify amin
 
 The pipeline has several steps and multiple sections of the pipeline require input from external analysis, such as database searches of proteomics data. As such, this is not a standalone software package that can be run automatically. Detailed instructions for running the pipeline are provided in the various README.md files in this repository.
 
-Results and output files from running this pipeline on datasets as described in [LINK TO PREPRINT] can be accessed here: [decode output](https://drive.google.com/open?id=15YoTBTZh4MdtAqHbibkYieEqyLyFi5hb&usp=drive_fs)
+Results and output files from running this pipeline on datasets as described by [Tsour *et al*](https://doi.org/10.1101/2024.08.26.609665) can be accessed here: [decode output](https://drive.google.com/open?id=15YoTBTZh4MdtAqHbibkYieEqyLyFi5hb&usp=drive_fs)
 
 ## Overview of pipeline
 1. Custom protein sequence database generation by *in-silico* translation of RNA-seq data
@@ -56,3 +56,6 @@ The data generated in the pipeline outlined above can be further analyzed in man
 These directories contain different subsets of the analyses described in the paper along with the code to reproduce the figures. Each contain a README.md describing the analyses contained.
 
 The downstream analyses are dependent on the many data files generated in the pipeline described above. In order to keep this analysis as reproducible as possible, we have deposited all our relevant output files to [decode output](https://drive.google.com/open?id=15YoTBTZh4MdtAqHbibkYieEqyLyFi5hb&usp=drive_fs). If this data is downloaded and the "proj_dir" parameter set to the download location, all the figures in [decode_figures/Code_for_figures.ipynb](decode_figures/Code_for_figures.ipynb) can be generated.
+
+## License
+The code is avilable under **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)** license 
