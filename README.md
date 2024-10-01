@@ -10,7 +10,7 @@ The code in this repository can be used to identify, validate, and quantify amin
 
 The pipeline has several steps and multiple sections of the pipeline require input from external analysis, such as database searches of proteomics data. As such, this is not a standalone software package that can be run automatically. Detailed instructions for running the pipeline are provided in the various README.md files in this repository.
 
-Results and output files from running this pipeline on datasets as described by [Tsour *et al*](https://doi.org/10.1101/2024.08.26.609665) can be accessed here: [decode output](https://drive.google.com/open?id=15YoTBTZh4MdtAqHbibkYieEqyLyFi5hb&usp=drive_fs)
+Results and output files from running this pipeline on datasets as described by [Tsour *et al*](https://doi.org/10.1101/2024.08.26.609665) can be accessed here: [decode output](https://drive.google.com/open?id=15YoTBTZh4MdtAqHbibkYieEqyLyFi5hb&usp=drive_fs). These files can be downloaded and used to replicate figures using the code provided in [decode_figures](https://github.com/SlavovLab/decode/tree/main/decode_figures)
 
 ## Overview of pipeline
 1. Custom protein sequence database generation by *in-silico* translation of RNA-seq data
