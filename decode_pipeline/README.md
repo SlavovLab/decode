@@ -64,7 +64,7 @@ This script computes q-values for candidate SAAP, appends candidate SAAP to cust
 3. custom_fasta_MTP.fasta : Custom fasta file with candidate SAAP appended
 
 ## 3. Run validation database search in MaxQuant
-See [MaxQuant_templates/README.md](MaxQuant_templates/README.md)
+See MaxQuant_templates/README.md
 
 ## 4. Filter candidate substituted peptides to those that are identified in validation search 
 
