@@ -34,7 +34,7 @@ These scripts analyze DP search results to find peptides with known modification
 2. evidence.txt (MaxQuant output)
 3. sample_map.xlsx (dataset metadata - described above)
 4. Modifications_table_091520.xlsx (Downloaded all known modifications from unimod.org, appended with addition and loss of TMT label. Can be found in [decode output](https://drive.google.com/open?id=15YoTBTZh4MdtAqHbibkYieEqyLyFi5hb&usp=drive_fs)
-5. Genome fasta file
+5. Genome (CDS+UTR) fasta file
 
 ### Outputs:
 1. DP_dict.p : Dictionary of allPeptides.txt annotated with modifications and/or AA substitution data (e.g. modification/substitution type, mass shift, new sequence, modification error, genome substring data)
