@@ -41,10 +41,10 @@ These scripts analyze DP search results to find peptides with known modification
 2. PTM_dict.p : Subset of DP_dict corresponding to known PTMs (biological or experimental)
 3. MTP_dict.p : Subset of DP_dict corresponding to candidate peptides with AAS
 4. DP_search_evidence_dict.p, a dictionary with TMT sets as keys and evidence.txt dataframes as values.
-5.  6-frame translations of genome used to assess if peptide can arise from noncanonical translation
-These can be used as input if previously generated
+5.  6-frame translations of genome (CDS+UTR) used to assess if peptide can arise from noncanonical translation.
+These can be used as input if previously generated.
 
-Output files for data analyzed in [LINK TO PREPRINT] can be found in [decode output](https://drive.google.com/open?id=15YoTBTZh4MdtAqHbibkYieEqyLyFi5hb&usp=drive_fs)
+Output files for data analyzed in [Tsour *et al*](https://doi.org/10.1101/2024.08.26.609665) can be found in [decode output](https://drive.google.com/open?id=15YoTBTZh4MdtAqHbibkYieEqyLyFi5hb&usp=drive_fs)
 
 ## 2. Filter candidate peptides by 1% FDR and append identified candidate peptides to custom fasta files
 
@@ -64,7 +64,7 @@ This script computes q-values for candidate SAAP, appends candidate SAAP to cust
 3. custom_fasta_MTP.fasta : Custom fasta file with candidate SAAP appended
 
 ## 3. Run validation database search in MaxQuant
-See MaxQuant_templates/README.md
+See [MaxQuant_templates/README.md](MaxQuant_templates/README.md)
 
 ## 4. Filter candidate substituted peptides to those that are identified in validation search 
 
