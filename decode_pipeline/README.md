@@ -99,7 +99,7 @@ These scripts quantifies validated substituted peptides and their corresponding 
 
 
 ## Further analysis
-The data files produced with this pipeline can be used for futher analysis of the substituted peptides. The results from running this pipeline as described in [LINK TO PREPRINT] can be found in [decode output](https://drive.google.com/open?id=15YoTBTZh4MdtAqHbibkYieEqyLyFi5hb&usp=drive_fs) and used to generate the analyses and figures described in ~/decode_analysis/ and ~/decode/figures
+The data files produced with this pipeline can be used for futher analysis of the substituted peptides. The results from running this pipeline as described in [Tsour *et al*](https://doi.org/10.1101/2024.08.26.609665) can be found in [decode output](https://drive.google.com/open?id=15YoTBTZh4MdtAqHbibkYieEqyLyFi5hb&usp=drive_fs) and used to generate the analyses and figures described in [decode_analysis](decode_analysis) and [decode_figures](decode_figures)
 
 Additional scripts for quantifying the non-modified peptides, proteins, and modified proteins from the MaxQuant search data are provided in ~/decode_pipeline/python_script/downstream_processing/. The output from these scripts used in generating publication figures are also provided in [decode output](https://drive.google.com/open?id=15YoTBTZh4MdtAqHbibkYieEqyLyFi5hb&usp=drive_fs)
 
