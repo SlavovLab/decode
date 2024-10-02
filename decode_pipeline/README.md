@@ -2,7 +2,7 @@
 
 ## Getting started 
 
-The python scripts in ~/python_scripts/ are used for identifying, validating and quantifying amino acid substitutions in results from a dependent peptide search in MaxQuant. 
+The python scripts in [python_scripts](~/python_scripts/) are used for identifying, validating and quantifying amino acid substitutions in results from a dependent peptide search in MaxQuant. 
 
 The scripts are dependent on one another and intended to be run in a specific order. After identifying candidate peptides with substitutions, the user must run a validation search with MaxQuant or another search engine. 
 
