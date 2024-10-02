@@ -31,7 +31,7 @@ If no matched RNA-seq data is available, this step can be skipped, but caution s
 ### Step 2: Identifying modified peptides with MaxQuant
 The dependent peptide search algorithm in MaxQuant is used to identify peptides with modifications in LC-MS proteomics data.
 
-The LC-MS proteomics data is ideally searched against the sample-specific database generated in Step 1. If not available, generic UniProt fasta can be used.
+The LC-MS proteomics data is ideally searched against the sample-specific database generated in Step 1. If not available, species-specific [UniProt](https://www.uniprot.org/) fasta can be used.
 
 A sample MaxQuant parameter file is provided in MaxQuant_templates, along with a script to create a new parameter file with user-defined parameters (raw files, fasta, etc.)
 
