@@ -87,7 +87,7 @@ A [pipeline][decode_Code] for reproducing the analysis by [Tsour *et al*][Decode
 -------
 
 
-[Decode_article]: https://www.biorxiv.org/content/10.1101/2024.08.26.609665v1 "Alternate RNA decoding results in stable and abundant proteins in mammals"
+[Decode_article]: https://www.biorxiv.org/content/10.1101/2024.08.26.609665v2.full "Alternate RNA decoding results in stable and abundant proteins in mammals"
 
 &nbsp;  
 

@@ -70,5 +70,5 @@ Contact the authors by email: [nslavov\{at\}northeastern.edu](mailto:nslavov@nor
 This project was supported by funding by an [Allen Distinguished Investigator Award](https://alleninstitute.org/person/nikolai-slavov/) from the Paul G. Allen Frontiers Group to N.S., an NIGMS award R01GM144967 to N.S., NCI awards UG3CA268117 and UH3CA268117 to N.S., and a MIRA award R35GM148218 from the NIGMS of to N.S.
 
 
-[Decode_article]: https://www.biorxiv.org/content/10.1101/2024.08.26.609665v1 "Alternate RNA decoding results in stable and abundant proteins in mammals"
+[Decode_article]: https://www.biorxiv.org/content/10.1101/2024.08.26.609665v2.full "Alternate RNA decoding results in stable and abundant proteins in mammals"
 [decode_Code]: https://github.com/SlavovLab/decode "Decode data analysis pipeline, GitHub repository from the Slavov Laboratory"
