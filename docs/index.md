@@ -39,7 +39,7 @@ This website contains links to resources for quantifying amino acids incorporate
 
 &nbsp;
 
-<iframe width="560" height="315" src="https://youtu.be/LN4UWvnlmng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LN4UWvnlmng?si=Ux8s-CRZkHGqrOBM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
