@@ -33,25 +33,25 @@ The dependent peptide search algorithm in MaxQuant is used to identify peptides 
 
 The LC-MS proteomics data is ideally searched against the sample-specific database generated in Step 1. If not available, species-specific [UniProt](https://www.uniprot.org/) fasta can be used.
 
-A sample MaxQuant parameter file is provided in MaxQuant_templates, along with a script to create a new parameter file with user-defined parameters (raw files, fasta, etc.)
+A sample MaxQuant parameter file is provided in [MaxQuant_templates](https://github.com/SlavovLab/decode/tree/main/MaxQuant_templates), along with a script to create a new parameter file with user-defined parameters (raw files, fasta, etc.)
 
 The output from this dependent peptide search is required to proceed with the next steps of the pipeline.
 
 ### Step 3: Identifying candidate alternate translation events
 Search for modified peptides in dependent peptide search results that may represent amino acid substitutions. Add candidate peptides to custom protein sequence databases for validation search.
 
-The code for this step can be found in [decode_pipeline/python_scripts](https://github.com/SlavovLab/decode/tree/main/decode_pipeline/python_scripts). [decode_pipeline/README.md](decode_pipeline/README.md) contains detailed instructions for running this code.
+The code for this step can be found in [decode_pipeline/python_scripts](https://github.com/SlavovLab/decode/tree/main/decode_pipeline/python_scripts). [decode_pipeline/README.md](https://github.com/SlavovLab/decode/tree/main/decode_pipeline/README.md) contains detailed instructions for running this code.
 
 ### Step 4. Validation search with MaxQuant (or another proteomics data search engine)
 Run a standard database search using the protein databases appended with candidate substituted peptides (step 3).
 
-A sample MaxQuant parameter file is provided in MaxQuant_templates. The output from this validation search is required to proceed with the next steps of the pipeline.
+A sample MaxQuant parameter file is provided in [MaxQuant_templates](https://github.com/SlavovLab/decode/tree/main/MaxQuant_templates). The output from this validation search is required to proceed with the next steps of the pipeline.
 
 ### Step 5. Quantify alternate decoding events
-The code for this step can be found in [decode_pipeline/python_scripts]([https://github.com/SlavovLab/decode/tree/main/decode_pipeline/python_scripts). [decode_pipeline/README.md](decode_pipeline/README.md) contains detailed instructions for running this code.
+The code for this step can be found in [decode_pipeline/python_scripts](https://github.com/SlavovLab/decode/tree/main/decode_pipeline/python_scripts). [decode_pipeline/README.md](decode_pipeline/README.md) contains detailed instructions for running this code.
 
 ### Step 6. Downstream data analysis
-The data generated in the pipeline outlined above can be further analyzed in many ways. The code for the analysis described in [Preprint article](https://doi.org/10.1101/2024.08.26.609665) is provided in [decode_analysis](decode_analysis) and [decode_figures]([decode_figures](https://github.com/SlavovLab/decode/tree/main/decode_figures)) and [gnomAD_analysis](https://github.com/SlavovLab/decode/tree/main/gnomAD_analysis).
+The data generated in the pipeline outlined above can be further analyzed in many ways. The code for the analysis described in [Preprint article](https://doi.org/10.1101/2024.08.26.609665) is provided in [decode_analysis](https://github.com/SlavovLab/decode/tree/main/decode_analysis) and [decode_figures](https://github.com/SlavovLab/decode/tree/main/decode_figures) and [gnomAD_analysis](https://github.com/SlavovLab/decode/tree/main/gnomAD_analysis).
 
 These directories contain different subsets of the analyses described in the paper along with the code to reproduce the figures. Each contain a README.md describing the analyses contained.
 
