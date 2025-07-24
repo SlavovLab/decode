@@ -55,7 +55,7 @@ The data generated in the pipeline outlined above can be further analyzed in man
 
 These directories contain different subsets of the analyses described in the paper along with the code to reproduce the figures. Each contain a README.md describing the analyses contained.
 
-The downstream analyses are dependent on the many data files generated in the pipeline described above. In order to keep this analysis as reproducible as possible, we have deposited all our relevant output files to [decode output](https://drive.google.com/open?id=15YoTBTZh4MdtAqHbibkYieEqyLyFi5hb&usp=drive_fs). If this data is downloaded and the "proj_dir" parameter set to the download location, all the figures in [decode_figures/Code_for_figures.ipynb](decode_figures/Code_for_figures.ipynb) can be generated.
+The downstream analyses are dependent on the many data files generated in the pipeline described above. In order to keep this analysis as reproducible as possible, we have deposited all our relevant output files to [decode output](https://drive.google.com/open?id=15YoTBTZh4MdtAqHbibkYieEqyLyFi5hb&usp=drive_fs). If this data is downloaded and the "proj_dir" parameter set to the download location, all the figures in [decode_figures/Code_for_figures.ipynb](decode_figures/decode_figures) can be generated.
 
 ## License
 The code is avilable under **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)** license 
