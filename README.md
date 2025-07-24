@@ -24,7 +24,7 @@ Results and output files from running this pipeline on datasets as described by 
 ### Step 1: Custom protein databases
 Use RNA-seq data matched to LC-MS proteomics data to create sample-specific protein databases.
 
-The code for this step is in [custom_protein_database_pipeline](custom_protein_database_pipeline)](https://github.com/SlavovLab/decode/tree/main/custom_protein_database_pipeline) and the [README.md](custom_protein_database_pipeline/README.md) in that directory contains detailed instructions for running the code.
+The code for this step is in [custom_protein_database_pipeline](https://github.com/SlavovLab/decode/tree/main/custom_protein_database_pipeline) and the [README.md](custom_protein_database_pipeline/README.md) in that directory contains detailed instructions for running the code.
 
 If no matched RNA-seq data is available, this step can be skipped, but caution should be taken in interpreting quantified amino acid substitutions as there is lower confidence that they are not encoded in the genome.
 
