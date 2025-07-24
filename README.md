@@ -13,12 +13,12 @@ The [decode_pipeline](https://github.com/SlavovLab/decode/tree/main/decode_pipel
 Results and output files from running this pipeline on datasets as described by [Tsour *et al*](https://doi.org/10.1101/2024.08.26.609665) can be accessed here: [decode output](https://drive.google.com/open?id=15YoTBTZh4MdtAqHbibkYieEqyLyFi5hb&usp=drive_fs). These files can be downloaded and used to replicate figures using the code provided in [decode_figures](https://github.com/SlavovLab/decode/tree/main/decode_figures) and [decode_analysis](https://github.com/SlavovLab/decode/tree/main/decode_analysis).
 
 ## Overview of pipeline
-1. Custom protein sequence database generation by *in-silico* translation of RNA-seq data
+1. for protein sequence database generation by *in-silico* translation of RNA-seq data ([custom_protein_database_pipeline](https://github.com/SlavovLab/decode/tree/main/custom_protein_database_pipeline))
 2. Dependent peptide search with MaxQuant (external software analysis)
-3. Identifying candidate peptides with amino acid substitutions
+3. Identifying candidate peptides with amino acid substitutions  ([decode_pipeline](https://github.com/SlavovLab/decode/tree/main/decode_pipeline))
 4. Validation database search (external software analysis)
-5. Quantifying validated peptides with amino acid substitutions
-6. Downstream data analysis
+5. Quantifying validated peptides with amino acid substitutions ([decode_pipeline](https://github.com/SlavovLab/decode/tree/main/decode_pipeline))
+6. Downstream data analysis ([decode_figures](https://github.com/SlavovLab/decode/tree/main/decode_figures), [decode_analysis](https://github.com/SlavovLab/decode/tree/main/decode_analysis))
 
 ## Usage
 ### Step 1: Custom protein databases
