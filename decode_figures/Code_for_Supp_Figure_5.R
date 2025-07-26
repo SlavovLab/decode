@@ -27,10 +27,11 @@ Proc_fasta <- function(path){
 SAAP <- read.csv('/Users/andrewleduc/Downloads/Supplemental_Data_2.SAAP_proteins.csv')
 
 
-# Set path to Analysis Dependencies/Pull_down_analysis/ folder 
 
+# Set path to Analysis Dependencies/Pull_down_analysis/ folder 
+path <- '/Users/andrewleduc/Library/CloudStorage/GoogleDrive-research@slavovlab.net/My Drive/MS/SuppData/2024_Tsour/Pipline_output/analysis_dependencies/Pull_down_analysis/'
 # Searched pull down data from 
-raw <- read.delim('PullDown_search.tsv',sep = '\t')
+raw <- read.delim(paste0(path,'PullDown_search.tsv'),sep = '\t')
 
 raw <- raw %>% filter(Intensity != 0)
 SAAP <- SAAP %>% filter(is.na(Mean.precursor.RAAS)==F)
@@ -42,6 +43,9 @@ raw$Spectrum.File <- str_remove(raw$Spectrum.File,'_rank3')
 raw$Spectrum.File <- str_remove(raw$Spectrum.File,'_rank4')
 raw$Spectrum.File <- str_remove(raw$Spectrum.File,'_rank5')
 raw$Spectrum.File <- str_extract(raw$Spectrum.File, "[^_]+$")
+
+unique(SAAP_check$Uniprot_ID)
+SAAP_check <- SAAP %>% filter(Uniprot_ID %in% convert_2$Uniprot)
 
 SAAP <- SAAP %>% filter(BP %in% raw$Peptide)
 SAAP <- SAAP %>% filter(SAAP %in% raw$Peptide)
@@ -72,7 +76,7 @@ for(i in 1:nrow(SAAP)){
         df$BP[count] <- SAAP$BP[i]
         df$SAAP[count] <- SAAP$SAAP[i]
         df$Uniprot[count] <- bp_df$Protein.ID[1]
-        df$Pull_down_gene[count] <- raw_hold_hold_hold$Gene[1]
+        df$Pull_down_gene[count] <- raw_hold_hold_hold$Spectrum.File[1]
         
         df$RAAS[count] <- log10(max(dp_df$Intensity,na.rm = T)/max(bp_df$Intensity,na.rm = T))
         
@@ -108,14 +112,6 @@ df_collapsed <- df %>%
     .groups = "drop"
   )
 
-df_collapsed <- df %>% 
-  dplyr::group_by(BP, SAAP, Pull_down_gene) %>% 
-  dplyr::summarize(across(c(Uniprot, RAAS_Shiri, SAAP_PEP, BP_PEP), 
-                   ~ .x[1]),                 # take the first element
-            RAAS = mean(RAAS, na.rm = TRUE),
-            .groups = "drop")
-
-
 
 plot(df_collapsed$RAAS,df_collapsed$RAAS_Shiri,main = 'Pearson = 0.35')
 cor(df_collapsed$RAAS,df_collapsed$RAAS_Shiri,method = 'spearman')
@@ -129,23 +125,11 @@ colnames(convert)[2] <- 'Gene'
 
 df_collapsed <- df_collapsed %>% left_join(convert, by = c('Uniprot'))
 
-
-df_collapsed2 <- df_collapsed %>% filter(Gene == Pull_down_gene)
-plot(df_collapsed2$RAAS,df_collapsed2$RAAS_Shiri)
-cor(df_collapsed2$RAAS,df_collapsed2$RAAS_Shiri,method = 'pearson')
-
-
-df_collapsed$match <- F
-
-df_collapsed$match[df_collapsed$Gene == df_collapsed$Pull_down_gene]
+convert_2 <- convert %>% filter(Gene %in% raw$Spectrum.File)
 
 df_collapsed3 <- df_collapsed %>% filter(SAAP_PEP < .01)
 df_collapsed3 <- df_collapsed3 %>% filter(BP_PEP < .01)
 
-nrow(df_collapsed3)
-df_collapsed2 <- df_collapsed3 %>% filter(Gene == Pull_down_gene)
-plot(df_collapsed3$RAAS,df_collapsed3$RAAS_Shiri)
-cor(df_collapsed3$RAAS,df_collapsed3$RAAS_Shiri,method = 'pearson')
 
 df_collapsed3$Matched <- df_collapsed3$Gene == df_collapsed3$Pull_down_gene
 df_collapsed3$Matched[is.na(df_collapsed3$Matched)] <- F
@@ -158,23 +142,9 @@ ggplot(df_collapsed3,aes(x = RAAS,y = RAAS_Shiri,color = Matched))+ geom_point(s
   xlab('RAAS Pull down') + ylab('RAAS CPTAC')
 
 
+
 write.csv(df_collapsed3,'~/Desktop/Supplementary_data_table_x.csv')
 
-
-
-
-
-# SAAPs identified,
-
-# SAAPs mapping to bait protein 30
-
-# Bait proteins with corresponding a SAAP identified 16
-
-df_bar <- data.frame(searched = 25, found = 18)
-
-df_bar <- melt(df_bar)
-ggplot(df_bar,aes(x = variable,y = value)) + geom_bar(stat = 'identity') +
-  ylab('# Proteins') + xlab('') + theme_classic(base_size = 18)
 
 
 #### Plotting raw spectrum
