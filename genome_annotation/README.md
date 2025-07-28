@@ -14,7 +14,11 @@ substitutions.
 The scripts are written in `bash` and `R` and depend on various
 additionally installed tools. The bash scripts were never actually run
 as one script, they are used as a documentation of downloading and
-data processing steps run manually in a bash console. *
+data processing steps run manually in a bash console. 
+
+Note, that these scripts were initially hosted in
+https://gitlab.com/raim/genomeBrowser/-/tree/master/data/mammary and
+copied/adapted from there on 2025-07-28. 
 
 1. `setup.sh` is the master script that sets up a directory structure,
    and calls all other scripts. It further contains a series of 
