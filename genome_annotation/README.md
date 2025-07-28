@@ -16,6 +16,10 @@ additionally installed tools. The bash scripts were never actually run
 as one script, they are used as a documentation of downloading and
 data processing steps run manually in a bash console. 
 
+**All files generated here and required for downstream analysis are
+also provided in a separte folder. See README file in
+`../decode_analysis`.**
+
 Note, that these scripts were initially hosted in
 https://gitlab.com/raim/genomeBrowser/-/tree/master/data/mammary and
 copied/adapted from there on 2025-07-28. 
