@@ -37,7 +37,7 @@ up.file <- file.path(mam.path,"originalData",
 
 
 ## OUTPUT FILE
-feature.file <- file.path(mam.path,"features_GRCh38.110.tsv")
+feature.file <- file.path(mam.path, "features_GRCh38.110.tsv")
 
 fig.path <- file.path(mam.path,"processedData","annotation")
 dir.create(fig.path, showWarnings=FALSE)
