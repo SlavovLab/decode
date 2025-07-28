@@ -2,27 +2,23 @@
 library(readxl)
 library(Biostrings) # for genetic code, blosum62, etc
 library(segmenTools)
-source("~/programs/segmenTools/R/coor2index.R")
-source("~/programs/segmenTools/R/parsers.R")
 
 ## liftOver utility from UCSC
 liftOver <- file.path("~/programs/ucsc_utils/liftOver")
 
+
 ## GENERATE HUMAN tRNA ANNOTATION
 
-## TODO: load official annotation
+mam.path <- Sys.getenv("MAMDATA")
 
 ## output
-out.file <- file.path("~/data/mammary/",
-                      "codons_GRCh38.tsv")
+out.file <- file.path(mam.path, "codons_GRCh38.tsv")
 
 ## input files
-codonmap <- file.path("~/data/mammary/originalData",
-                      "torres19_s3.xlsx")
-codonclasses <- file.path("~/data/mammary/originalData",
-                          "gingold14_mmc2.xls")
+codonmap <- file.path(mam.path, "originalData", "torres19_s3.xlsx")
+codonclasses <- file.path(mam.path, "originalData", "gingold14_mmc2.xls")
 ## liftOver chain
-chain <-  file.path("~/data/mammary/originalData","hg19ToHg38.over.chain.gz")
+chain <-  file.path(mam.path, "originalData", "hg19ToHg38.over.chain.gz")
 
 ## Torres et al. 2019 : alignments were performed against the human
 ## reference genome hg38. Human hg38 predicted tRNA genes were
