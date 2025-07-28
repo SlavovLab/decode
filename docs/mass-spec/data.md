@@ -21,7 +21,7 @@ nav_exclude: false
 <h2 style="letter-spacing: 2px; font-size: 26px;" id="plexDIA-data" >Decode pipeline results organized by datasets</h2>
 All results from processing LC-MS proteomics data through [decode pipeline](https://github.com/SlavovLab/decode) described in [Tsour *et al*](https://doi.org/10.1101/2024.08.26.609665) are organized in this [directory](https://drive.google.com/drive/folders/15YoTBTZh4MdtAqHbibkYieEqyLyFi5hb?usp=sharing).
 
-[Description](https://docs.google.com/document/d/17Bpu_kIfnSnGpETMQWQM7W9PUvMrpAe9/edit?usp=drive_link&ouid=109814487119977139380&rtpof=true&sd=true) of files in [directory](https://drive.google.com/drive/u/3/folders/15YoTBTZh4MdtAqHbibkYieEqyLyFi5hb).
+[Description](https://docs.google.com/document/d/17Bpu_kIfnSnGpETMQWQM7W9PUvMrpAe9/edit?usp=drive_link&ouid=109814487119977139380&rtpof=true&sd=true) of files in [pipeline output directory](https://drive.google.com/drive/u/3/folders/15YoTBTZh4MdtAqHbibkYieEqyLyFi5hb).
 
 ## Supplemental Data Files
 * [Supplemental Data 1](https://drive.google.com/file/d/1h4R6CAbQ1jQi45OTx6pjxWDpbTzG-n-o/view?usp=sharing): A table of peptides identified through the dependent peptide search as having known post-translational or chemical modifications. This table includes peptides from all 6 CPTAC datasets and the label-free healthy human tissue dataset. Types and locations of modifications are specified for each peptide.
