@@ -3,12 +3,15 @@
 ## https://biomine.cs.vcu.edu/servers/DESCRIBEPROT/download_database/9606_database.json
 
 # Path to file
-test <-  '/Users/andrewleduc/Downloads/9606_database.json'
+mam.path <- Sys.getenv("MAMDATA")
+in.file <-  file.path(mam.path,  'originalData', '9606_database.json')
 
 
+out.path <- file.path(mam.path, 'processedData', 'describePROT')
+dir.create(out.path)
 
 # Text mine file line by line and extract saved scores for each amino acid
-con <- file(test,"r")
+con <- file(in.file, "r")
 all_line <- readLines(con)
 close(con)
 
@@ -91,9 +94,6 @@ df$seq <- seq_p
 
 # Unlist the scores and save a seperate file for each protein which has all the scores by Amino acid residue
 
-# Out path to save files for scores for each protein
-path <- '/Users/andrewleduc/Desktop/For_raim/'
-
 
 for(i in 1:nrow(df)){
   
@@ -133,6 +133,7 @@ for(i in 1:nrow(df)){
   }
   
   
-  write.table(df_temp, paste0(path,df$prot_list[i],".tsv"), sep = "\t", row.names = FALSE, col.names = FALSE)
+    write.table(df_temp, file.path(out.path, paste0(df$prot_list[i],".tsv")),
+                sep = "\t", row.names = FALSE, col.names = FALSE)
   
 }

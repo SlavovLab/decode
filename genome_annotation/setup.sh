@@ -230,6 +230,8 @@ gunzip -c $ORIGDATA/Homo_sapiens.GRCh38.pep.all.fa.gz \
 grep ">" $PROCDATA/Homo_sapiens.GRCh38.pep.large.fa \
     | sed 's/> *//' > $PROCDATA/Homo_sapiens.GRCh38.pep.large_ids.txt
 
+## extract describePROT data
+R --vanilla < $SRC/DESCRIBEPROTscores_text_mine.R
 
 
 ## RUN CALCULATIONS: hmmer/PFAM, S4pred, iupred3

@@ -52,7 +52,9 @@ wget https://www.pnas.org/doi/suppl/10.1073/pnas.1821120116/suppl_file/pnas.1821
 
 ### describePROT data
 ## NOTE: These files were extracted from the json file of describePROT by
-## Andrew Leduc, 20240517.
+## Andrew Leduc, 20240517. See and adapt paths in the script
+## `DESCRIBEPROTscores_text_mine.R` to process this data.
+wget https://biomine.cs.vcu.edu/servers/DESCRIBEPROT/download_database/9606_database.json -P $MAMDATA/originalData/ -O 9606_database.json
 
 ## ID MAPPING
 
