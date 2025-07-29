@@ -32,6 +32,8 @@ for(i in 1:length(all_line)){
     }
     
   }
+
+  # Searching each line to see if it contains information from one of the desired scores
   
   if(length(grep('MMseq2_conservation_score',all_line[i])==1)==1){
     score_save <- substr(all_line[i], 33, nchar(all_line[i]) - 3)
