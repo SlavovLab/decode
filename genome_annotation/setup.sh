@@ -2,12 +2,15 @@
 
 ## DATA SETUP and CALCULATIONS for ANALYSIS of AMINO ACID SUBSTITUTIONS
 
+## NOTE that these scripts were extracted from their original place in a
+## larger multi-project script base by Rainer Machne ((C) 2025), accessible
+## at https://gitlab.com/raim/genomeBrowser/-/tree/master/data/mammary
+
 ## This is a log file more than a script, manual steps are
 ## required in all cases within `if false;` conditions:
 ## some data downloads, data transfer to and calculations at a HPC platform.
 
 ## SETUP DATA DIRECTORIES FOR HUMAN GENOME DATA
-## (originally for data from MCF10A cell lines, hence the project name.)
 
 ## PATH WHERE DATA IS STORED - NOTE THAT THIS PATH IS
 ## REQUIRED TO BE DEFINED IN R scripts
