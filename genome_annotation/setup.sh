@@ -1,20 +1,26 @@
 #!/bin/bash
 
+## DATA SETUP and CALCULATIONS for ANALYSIS of AMINO ACID SUBSTITUTIONS
+
+## This is a log file more than a script, manual steps are
+## required in all cases within `if false;` conditions:
+## some data downloads, data transfer to and calculations at a HPC platform.
 
 ## SETUP DATA DIRECTORIES FOR HUMAN GENOME DATA
 ## (originally for data from MCF10A cell lines, hence the project name.)
 
 ## PATH WHERE DATA IS STORED - NOTE THAT THIS PATH IS
 ## REQUIRED TO BE DEFINED IN R scripts
-export MAMDATA=${MYDATA}/mistrans_data/ 
+export MAMDATA=/home/{$USER}/data/mistrans_data/ 
 
-## PATH TO SCRIPTS (e.g. this one)
-SRC=~/work/mistrans/genome
+## PATH TO SCRIPTS (e.g. this one; git@github.com:SlavovLab/decode.git
+## subdirectory genome_analysis)
+SRC=<SOURCECODE_PATH>
 
 ## required additional tools
 bioawk=~/scripts/bioawk
 
-## main genomeBrowser directory structure
+## main directory structure
 ORIGDATA=$MAMDATA/originalData
 PROCDATA=$MAMDATA/processedData
 
@@ -30,7 +36,9 @@ mkdir $MAMDATA/log
 ## includes trivial preprocessing: format conversions, data extractions, etc.
 ## NOTE: do this manually, since many files
 ## are behind wget/rsync firewalls
-$SRC/download.sh
+if false; then
+    $SRC/download.sh
+fi
 
 ## ANALYZE GFF3 FILE STRUCTURE
 
@@ -165,7 +173,7 @@ R --vanilla < $SRC/annotation_tRNA.R
 
 ### GENERATE FEATURE and other ANNOTATION TABLES 
 
-## TODO: also generate annotation.rda for genomeBrowser
+## genome feature (transcripts, proteins) annotation file
 R --vanilla < $SRC/annotation.R >  $MAMDATA/log/annotation.log 
 
 
@@ -221,3 +229,9 @@ grep ">" $PROCDATA/Homo_sapiens.GRCh38.pep.large.fa \
 
 
 
+## RUN CALCULATIONS: hmmer/PFAM, S4pred, iupred3
+## NOTE: follow the manual steps in the following scripts
+if false; then
+    $SRC/setup_hpc.sh
+    $SRC/run_calculations.sh
+fi

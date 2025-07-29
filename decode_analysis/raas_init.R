@@ -75,7 +75,7 @@ psi.file <- file.path(add.path, "six_cell_lines_minimal.xlsx")
 
 
 ### GENOME FEATURE TABLE and PROTEIN ID MAPPINGS
-## via https://gitlab.com/raim/genomeBrowser/data/mammary/setup.sh
+## via ../genome_annotation/setup.sh
 
 ## uniprot/refseq/ensembl/name mappings
 uni2ens.file <- file.path(add.path,"uniprot_ensembl.dat.gz")
@@ -86,7 +86,7 @@ refseq.file <- file.path(add.path, "ensembl_refseq_20240528.tsv.gz")
 ## downloaded on 20240712
 synonym.file <- file.path(add.path, "gene_synonyms.tsv.gz")
 
-## codon frequencies, calculated in genomeBrowser
+## codon frequencies, calculated in ../genome_annotation/setup.sh
 codon.file <- file.path(add.path,"coding_codons.tsv.gz")
 
 ## coding sequence fasta

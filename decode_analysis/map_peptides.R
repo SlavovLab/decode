@@ -7,9 +7,7 @@ library(segmenTools)
 options(stringsAsFactors=FALSE)
 
 
-## DATA FROM  genomeBrowser, project folder data/mammary,
-## run steps in data/mammary/setup.sh to create all data
-## required here!
+## REQUIRES DATA generated as in ../genome_annotation/setup.sh !
 
 mam.path <- file.path(Sys.getenv("MAMDATA")) 
 if ( mam.path=="" ) # author's local path
@@ -19,7 +17,7 @@ feature.file <- file.path(mam.path,"features_GRCh38.110.tsv")
 
 if ( !file.exists(feature.file) )
     stop("genome feature table file not found. This script requires ",
-         "setup of genomic data via the genomeBrowser/data/mammary/setup.sh. ",
+         "setup of genomic data via ../genome_annotation/setup.sh. ",
          "If you have set this up, please provide the path here as `mam.path` ",
          "and either change the path of the saap_mapped.tsv input or gzip and ",
          "copy it from processedData to additionalData.\n",

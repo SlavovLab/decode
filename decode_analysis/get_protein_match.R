@@ -16,12 +16,8 @@ dat.path <- file.path(proj.path,"originalData")
 bp.file <- file.path(proj.path,"processedData","unique_bp_blast.tsv")
 out.file <- file.path(proj.path,"processedData","bp_mapped.tsv")
 
-## DATA FROM  genomeBrowser, project folder data/mammary,
-## run steps in data/mammary/setup.sh to create all data
-## required here!
-##mam.path <- "/home/raim/data/mammary"
-##feature.file <- file.path(mam.path,"features_GRCh38.110.tsv")
-##tpmap.file <- file.path(mam.path,"originalData","protein_transcript_map.tsv")
+## DATA FROM  ../genome_annotation/setup.sh  is required here,
+## but provided in the additionalData directory.
 
 ## USING LOCAL COPIES INSTEAD (for publication git)!
 feature.file <- file.path(proj.path,"additionalData",
