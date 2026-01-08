@@ -34,7 +34,8 @@ All results from processing LC-MS proteomics data through [decode pipeline](http
 * [Supplementary Data 8](https://docs.google.com/spreadsheets/d/1x41kRaFSv0BHrXvQq2hup50tJBG7wic3/edit?usp=sharing&ouid=114735776017011401178&rtpof=true&sd=true): Supplementary_Data_3 filtered for SAAP with positional probability >0.9.
 * [Supplementary Data 9](https://docs.google.com/spreadsheets/d/1_SCS_PYbJ0UujYIr9k3xo_9UZlZiG3JQ/edit?usp=sharing&ouid=109814487119977139380&rtpof=true&sd=true): Data tables with gene locus, allele frequency and constraint data for all observed substitutions.
 * [Supplementary Data 10](https://drive.google.com/file/d/1qXbTTqhOjHjN82ExNA2N2sNAk90eGHtk/view?usp=sharing): Aligned reads to the transcripts coding for the base peptides (and corresponding SAAP) shown in Supplementary Figure 1 and Supplementary Figure 2.
-* [Supplementary Data 11](https://docs.google.com/spreadsheets/d/1dDsqd1QcIRok64clYVWVPKjqgd7FfUmD/edit?usp=sharing&ouid=109814487119977139380&rtpof=true&sd=true): SAAP identified in IP-MS pulldown experiments. 
+* [Supplementary Data 11](https://docs.google.com/spreadsheets/d/1dDsqd1QcIRok64clYVWVPKjqgd7FfUmD/edit?usp=sharing&ouid=109814487119977139380&rtpof=true&sd=true): SAAP identified in IP-MS pulldown experiments.
+* [Supplementary Data 12](https://drive.google.com/file/d/1eqTPQiW5Ez-iJcA4S6wKNnteVJL3nh-i/view?usp=sharing): PTM peptide ratios as a function of protein abundance.
 
 
 &nbsp;
