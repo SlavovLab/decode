@@ -57,8 +57,8 @@ MW_dict = {"G": 57.02147,
             "N" : 114.04293,
             "D" : 115.02695,
             "Q" : 128.05858,
-            #"K" : 128.09497,
-            "K" : 357.257902, # mass of lysine is adjusted to reflect TMT label
+            "K" : 128.09497,
+            #"K" : 357.257902, # mass of lysine is adjusted to reflect TMT label
             "E" : 129.0426,
             "M" : 131.04049,
             "H" : 137.05891,
