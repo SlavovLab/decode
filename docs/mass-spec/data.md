@@ -19,11 +19,31 @@ nav_exclude: false
 [decode code](https://github.com/SlavovLab/decode){: .btn .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 <h2 style="letter-spacing: 2px; font-size: 26px;" id="plexDIA-data" >Decode pipeline results organized by datasets</h2>
-All results from processing LC-MS proteomics data through [decode pipeline](https://github.com/SlavovLab/decode) described in [Tsour *et al*](https://doi.org/10.1101/2024.08.26.609665) are organized in this [directory](https://drive.google.com/drive/folders/15YoTBTZh4MdtAqHbibkYieEqyLyFi5hb?usp=sharing).
+All results from processing LC-MS proteomics data through [decode pipeline](https://github.com/SlavovLab/decode) described in [Tsour *et al*](https://www.nature.com/articles/s41586-026-10678-2) are organized in this [directory](https://drive.google.com/drive/folders/15YoTBTZh4MdtAqHbibkYieEqyLyFi5hb?usp=sharing).
 
 [Description](https://docs.google.com/document/d/17Bpu_kIfnSnGpETMQWQM7W9PUvMrpAe9/edit?usp=drive_link&ouid=109814487119977139380&rtpof=true&sd=true) of files in [pipeline output directory](https://drive.google.com/drive/u/3/folders/15YoTBTZh4MdtAqHbibkYieEqyLyFi5hb).
 
 ## Supplementary Data Files
+
+The Supplementary Data Files are available from this [Google Directory](https://drive.google.com/drive/folders/1__RHk4dhppMKWClRQoENxINOUI7lNPD9?usp=sharing) and from [Nature](https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-026-10678-2/MediaObjects/41586_2026_10678_MOESM3_ESM.zip)
+
+
+* Supplementary Data 1: A table of peptides identified through the dependent peptide search as having known post-translational or chemical modifications. This table includes peptides from all 6 CPTAC datasets and the label-free healthy human tissue dataset. Types and locations of modifications are specified for each peptide.
+* Supplementary Data 2: A table containing 1 row per unique SAAP-BP pair per dataset (CPTAC and label-free). Each SAAP-BP pair is listed along with RAAS summary stats across the dataset and protein mapping information, including Pfam domains. The first tab of the file provides a description of the columns in the data table.
+* Supplementary Data 3: A table containing 1 row per unique SAAP-BP pair per TMT set (CPTAC) or healthy tissue type (label-free). Each SAAP-BP pair is listed along with their precursor ion level abundances and RAAS values computed from precursor ion intensities. The first tab of the file provides a description of the columns in the data table.
+* Supplementary Data 4: A table containing 1 row per unique SAAP-BP pair per patient sample (CPTAC only). Each SAAP-BP pair is listed along with their reporter ion level abundances and RAAS values computed from reporter ion intensities. The first tab of the file provides a description of the columns in the data table.
+* Supplementary Data 5: Table of SAAP-BP pairs identified in SILAC-labeled liver cells containing one row per unique SAAP-BP pair per sample. Precursor ion level abundances of the light and heavy peptides in each sample are listed, along with their sums, ratios and RAAS values. The first tab of the file provides a description of the columns in the data table.
+* Supplementary Data 6: A subset of Supplementary_Data_2.SAAP_proteins.xlsx containing SAAP, BP and RAAS data pertaining to proteins that have been implicated in neurodegeneration and dementia (Uniprot).
+* Supplementary Data 7: Mapping of the amino acid substitution sites of unique pairs of BP/SAAP to proteins, their transcripts and genome coordinates, as defined in the Ensembl genome release *GRCh38.110*.
+* Supplementary Data 8: Supplementary_Data_3 filtered for SAAP with positional probability >0.9.
+* Supplementary Data 9: Data tables with gene locus, allele frequency and constraint data for all observed substitutions.
+* Supplementary Data 10: Aligned reads to the transcripts coding for the base peptides (and corresponding SAAP) shown in Supplementary Figure 1 and Supplementary Figure 2.
+* Supplementary Data 11: SAAP identified in IP-MS pulldown experiments.
+* Supplementary Data 12: PTM peptide ratios as a function of protein abundance.
+
+
+
+<!--
 * [Supplementary Data 1](https://drive.google.com/file/d/1h4R6CAbQ1jQi45OTx6pjxWDpbTzG-n-o/view?usp=sharing): A table of peptides identified through the dependent peptide search as having known post-translational or chemical modifications. This table includes peptides from all 6 CPTAC datasets and the label-free healthy human tissue dataset. Types and locations of modifications are specified for each peptide.
 * [Supplementary Data 2](https://docs.google.com/spreadsheets/d/1toMYswafLDYxC8nHjR3-wCetss3vx6Me/edit?usp=sharing&ouid=109814487119977139380&rtpof=true&sd=true): A table containing 1 row per unique SAAP-BP pair per dataset (CPTAC and label-free). Each SAAP-BP pair is listed along with RAAS summary stats across the dataset and protein mapping information, including Pfam domains. The first tab of the file provides a description of the columns in the data table.
 * [Supplementary Data 3](https://docs.google.com/spreadsheets/d/1oGvuA8ZiYRHprs6QHDzrRwvFHo4jmeWv/edit?usp=sharing&ouid=109814487119977139380&rtpof=true&sd=true): A table containing 1 row per unique SAAP-BP pair per TMT set (CPTAC) or healthy tissue type (label-free). Each SAAP-BP pair is listed along with their precursor ion level abundances and RAAS values computed from precursor ion intensities. The first tab of the file provides a description of the columns in the data table.
@@ -36,6 +56,8 @@ All results from processing LC-MS proteomics data through [decode pipeline](http
 * [Supplementary Data 10](https://drive.google.com/file/d/1qXbTTqhOjHjN82ExNA2N2sNAk90eGHtk/view?usp=sharing): Aligned reads to the transcripts coding for the base peptides (and corresponding SAAP) shown in Supplementary Figure 1 and Supplementary Figure 2.
 * [Supplementary Data 11](https://docs.google.com/spreadsheets/d/1dDsqd1QcIRok64clYVWVPKjqgd7FfUmD/edit?usp=sharing&ouid=109814487119977139380&rtpof=true&sd=true): SAAP identified in IP-MS pulldown experiments.
 * [Supplementary Data 12](https://drive.google.com/file/d/1eqTPQiW5Ez-iJcA4S6wKNnteVJL3nh-i/view?usp=sharing): PTM peptide ratios as a function of protein abundance.
+
+-->
 
 
 &nbsp;
