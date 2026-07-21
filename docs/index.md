@@ -10,7 +10,7 @@ permalink: /
 # Alternate RNA decoding
 
 {: .fs-6 .fw-300}
-*Beyond the genetic code*
+*Expanded genetic code*
 
 
 &nbsp;
