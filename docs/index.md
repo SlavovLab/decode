@@ -16,7 +16,7 @@ permalink: /
 &nbsp;
 
 
-[Decode article][Decode_article]{: .btn .fs-5 .mb-4 .mb-md-0 }
+[Decode article][Decode_article_Nature]{: .btn .fs-5 .mb-4 .mb-md-0 }
 [Decode @ GitHub][decode_Code]{: .btn .fs-5 .mb-4 .mb-md-0 }
 [Data](mass-spec/data){: .btn .fs-5 .mb-4 .mb-md-0 }
 
