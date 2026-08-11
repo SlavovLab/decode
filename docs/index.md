@@ -34,6 +34,7 @@ Amino acid substitutions may substantially alter protein stability and function,
    - [Linkedin Highlight](https://www.linkedin.com/posts/nslavov_since-the-1960s-the-genetic-code-has-been-activity-7475564564332429314-VEFi)
    - [*GenomeWeb* Highlight](https://www.genomeweb.com/proteomics-protein-research/multiomics-study-suggests-alternate-rna-translation-more-pervasive), [PDF](mass-spec/Figures/Alternate-RNA-Decoding_GenomeWeb.pdf)
    - [*Nat Chem Biol* Highlight](https://www.nature.com/articles/s41589-026-02288-w)
+   - [NEU Global News](https://news.northeastern.edu/2026/08/10/protein-sequence-determination-research/)
 
 
 ------------
