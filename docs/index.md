@@ -30,6 +30,8 @@ Amino acid substitutions may substantially alter protein stability and function,
 
 * Tsour, *et al.* [Alternate RNA decoding results in stable and abundant proteins in mammals][Decode_article_Nature], *Nature* (2026), doi: [10.1038/s41586-026-10678-2](https://doi.org/10.1038/s41586-026-10678-2), [PDF](https://slavovlab.net/Slavov-Lab-Publications/2026_Tsour_Alternate_RNA_Decoding.pdf)
    - [*bioRxiv* preprint][Decode_article] (2024), 2024.08.26.609665
+
+### Highlights   
    - [*Science Magazine* Highlight](https://www.science.org/content/blog-post/when-variant-proteins-aren-t-actually-variant-ones)
    - [Linkedin Highlight](https://www.linkedin.com/posts/nslavov_since-the-1960s-the-genetic-code-has-been-activity-7475564564332429314-VEFi)
    - [*GenomeWeb* Highlight](https://www.genomeweb.com/proteomics-protein-research/multiomics-study-suggests-alternate-rna-translation-more-pervasive), [PDF](mass-spec/Figures/Alternate-RNA-Decoding_GenomeWeb.pdf)
